@@ -1,0 +1,2 @@
+class SpinClass < ApplicationRecord
+end
