@@ -9,7 +9,7 @@
 puts "beginning"
 
 #Users
-sivan = User.create(username: "sivanadler",  password: "this", first_name: "sivan", last_name: "adler", city: "new york", role: "rider")
+sivan = User.create(username: "sivanadler",  password: "this", first_name: "Sivan", last_name: "Adler", city: "new york", role: "rider", profile_pic: '..app/assets/sivan.jpg')
 
 #Studios
 flywheel = Studio.create(name: "FlyWheel Sports", logo: '../assets/flywheel.png', bio: "Flywheel offers in studio and on-demand indoor cycling, strengthening, and recovery classes.", website: "https://www.flywheelsports.com/")

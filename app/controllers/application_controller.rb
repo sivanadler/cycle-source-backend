@@ -12,7 +12,7 @@ class ApplicationController < ActionController::API
    # JWT.decode()
    # no need to check if there are headers because of the begin rescue!!
    begin
-     JWT.decode(auth_headers, ENV['KEY'])
+     JWT.decode(auth_headers, 'secret')
    rescue
      nil
    end

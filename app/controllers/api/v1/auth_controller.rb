@@ -21,7 +21,6 @@ class Api::V1::AuthController < ApplicationController
       # -> decode the token
       # -> send back user
     user = curr_user
-
     if user
       render json: user
     else
