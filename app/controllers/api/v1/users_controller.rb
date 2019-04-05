@@ -13,8 +13,8 @@ class Api::V1::UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      jwt = encode_token({user_id: user.id})
-      render json: {user: UserSerializer.new(user), jwt: jwt}
+      jwt = encode_token({user_id: @user.id})
+      render json: {user: UserSerializer.new(@user), jwt: jwt}
     else
       puts 'bad request'
     end
