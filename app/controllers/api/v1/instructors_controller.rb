@@ -11,8 +11,13 @@ class Api::V1::InstructorsController < ApplicationController
   end
 
   def create
-    @instructor = Instructor.create(instructor_params)
-    render json: @instructor
+    @instructor = Instructor.new(instructor_params)
+    if @instructor.save
+      jwt = encode_token({user_id: @instructor.id})
+      render json: {instructor: Instructor.new(@instructor), jwt: jwt}
+    else
+      puts 'bad request'
+    end
   end
 
   def update
@@ -30,7 +35,7 @@ class Api::V1::InstructorsController < ApplicationController
   private
 
   def instructor_params
-    params.require(:user).permit(:name, :hometown, :fun_fact, :teaching_style, :username, :password, :first_name, :last_name, :role)
+    params.require(:user).permit(:name, :hometown, :fun_fact, :teaching_style, :role, :username, :password)
   end
 
 end

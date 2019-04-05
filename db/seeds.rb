@@ -31,7 +31,7 @@ sync = Studio.create(name: "Sync Studio", logo: "../assets/sync.jpg", bio: "SYNC
 aqua = Studio.create(name: "Aqua Studio NY", logo: "../assets/aqua.png", bio: "The tri-level boutique studio in the heart of TriBeCa offers you the best of high performance fitness with the ambiance of modern wellness.", website: "https://www.aquastudiony.com/")
 
 #Instructors
-emily = Instructor.create(name: "Emily Fayette", hometown: "Rochester, New York", fun_fact: "I'm training for a marathon", teaching_style: "The Team Captain", username: "healthyhustle", password: "1234", role: true)
+emily = Instructor.create(name: "Emily Fayette", hometown: "Rochester, New York", fun_fact: "I'm training for a marathon", teaching_style: "The Team Captain", username: "healthyhustle", password: "1234", role: 'instructor')
 
 
 #Location

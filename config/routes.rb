@@ -15,8 +15,12 @@ Rails.application.routes.draw do
       # route to login
 			post "/login", to: "auth#login"
 
+      post "/instructor_login", to: "instructor_auth#instructor_login"
+
 			# login on refresh
 			get '/auto_login', to: "auth#auto_login"
+      
+      get '/instructor_auto_login', to: "instructor_auth#instructor_auto_login"
     end
   end
 end

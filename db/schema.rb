@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 2019_04_05_201544) do
     t.datetime "updated_at", null: false
     t.string "role"
     t.string "username"
-    t.string "password"
+    t.string "password_digest"
   end
 
   create_table "locations", force: :cascade do |t|

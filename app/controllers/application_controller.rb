@@ -31,6 +31,13 @@ class ApplicationController < ActionController::API
    # who the user is to see whether or not they can validly access something
  end
 
+ def curr_instructor
+   instructor_id = decode_token[0]["user_id"]
+   Instructor.find(instructor_id)
+   # who is the current user maybe we don't need to authorize the route but it might be nice to know
+   # who the user is to see whether or not they can validly access something
+ end
+
  def logged_in
    # is there a curr_user
    !!curr_user
