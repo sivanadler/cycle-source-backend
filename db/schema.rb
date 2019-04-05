@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_04_004153) do
+ActiveRecord::Schema.define(version: 2019_04_05_004116) do
 
   create_table "accounts", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -27,8 +27,6 @@ ActiveRecord::Schema.define(version: 2019_04_04_004153) do
     t.string "role"
     t.string "username"
     t.string "password"
-    t.string "first_name"
-    t.string "last_name"
   end
 
   create_table "locations", force: :cascade do |t|
@@ -48,6 +46,7 @@ ActiveRecord::Schema.define(version: 2019_04_04_004153) do
     t.string "time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.datetime "date"
   end
 
   create_table "studios", force: :cascade do |t|
@@ -68,7 +67,7 @@ ActiveRecord::Schema.define(version: 2019_04_04_004153) do
 
   create_table "users", force: :cascade do |t|
     t.string "username"
-    t.string "password"
+    t.string "password_digest"
     t.string "first_name"
     t.string "last_name"
     t.string "city"

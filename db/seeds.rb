@@ -9,7 +9,7 @@
 puts "beginning"
 
 #Users
-sivan = User.create(username: "sivanadler", password: "this", first_name: "sivan", last_name: "adler", city: "new york")
+sivan = User.create(username: "sivanadler",  password: "this", first_name: "sivan", last_name: "adler", city: "new york", role: "rider")
 
 #Studios
 flywheel = Studio.create(name: "FlyWheel Sports", logo: '../assets/flywheel.png', bio: "Flywheel offers in studio and on-demand indoor cycling, strengthening, and recovery classes.", website: "https://www.flywheelsports.com/")
@@ -31,9 +31,7 @@ sync = Studio.create(name: "Sync Studio", logo: "../assets/sync.jpg", bio: "SYNC
 aqua = Studio.create(name: "Aqua Studio NY", logo: "../assets/aqua.png", bio: "The tri-level boutique studio in the heart of TriBeCa offers you the best of high performance fitness with the ambiance of modern wellness.", website: "https://www.aquastudiony.com/")
 
 #Instructors
-emily = Instructor.create(name: "Emily Fayette", hometown: "Rochester, New York", fun_fact: "I'm training for a marathon", teaching_style: "The Team Captain")
-
-jared = Instructor.create(name: "Jared Poulin", hometown: "Waterville, Maine", fun_fact: "I'm into broadway musicals", teaching_style: "The Entertainer")
+emily = Instructor.create(name: "Emily Fayette", hometown: "Rochester, New York", fun_fact: "I'm training for a marathon", teaching_style: "The Team Captain", username: "healthyhustle", password: "1234", role: true)
 
 
 #Location
@@ -133,9 +131,8 @@ jared = Instructor.create(name: "Jared Poulin", hometown: "Waterville, Maine", f
     Location.create(studio_id: 9, name: "Aqua Studio", address: "78 Franklin Street New York, NY 10013", phone_number: "(212) 966-6784", email: "info@aquastudiony.com")
 
 
-
 #SpinClasses
-morning = SpinClass.create(studio_id: 1, instructor_id: 1, location_id: 1, time: "8:30 AM")
+morning = SpinClass.create(studio_id: 1, instructor_id: 1, location_id: 1, time: "8:30 AM", date: "20190415")
 
 #UserClasses
 UserClass.create(user_id: 1, spin_class_id: 1)
