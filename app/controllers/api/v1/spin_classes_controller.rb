@@ -29,6 +29,6 @@ class Api::V1::SpinClassesController < ApplicationController
   private
 
   def spin_class_params
-    params.require(:spin_class).permit(:studio_id, :instructor_id, :location_id, :time)
+    params.require(:spin_class).permit(:studio_id, :instructor_id, :location_id, :time, :start, :end)
   end
 end

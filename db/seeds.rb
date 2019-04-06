@@ -132,7 +132,7 @@ emily = Instructor.create(name: "Emily Fayette", hometown: "Rochester, New York"
 
 
 #SpinClasses
-morning = SpinClass.create(studio_id: 1, instructor_id: 1, location_id: 1, time: "8:30 AM", date: "20190415")
+morning = SpinClass.create(studio_id: 1, instructor_id: 1, location_id: 1, time: "45 MINUTE POWER RIDE", start: "201904150830EST", end: "201904150915EST")
 
 #UserClasses
 UserClass.create(user_id: 1, spin_class_id: 1)

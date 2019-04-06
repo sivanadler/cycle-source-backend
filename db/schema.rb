@@ -46,7 +46,8 @@ ActiveRecord::Schema.define(version: 2019_04_05_201544) do
     t.string "time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.datetime "date"
+    t.datetime "start"
+    t.datetime "end"
   end
 
   create_table "studios", force: :cascade do |t|
