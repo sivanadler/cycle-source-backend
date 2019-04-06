@@ -62,6 +62,7 @@ ActiveRecord::Schema.define(version: 2019_04_05_201544) do
   create_table "user_classes", force: :cascade do |t|
     t.integer "user_id"
     t.integer "spin_class_id"
+    t.integer "bike", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

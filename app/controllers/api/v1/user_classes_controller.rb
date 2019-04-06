@@ -30,7 +30,7 @@ class Api::V1::UserClassesController < ApplicationController
   private
 
   def user_class_params
-    params.require(:user).permit(:user_id, :spin_class_id)
+    params.require(:user_class).permit(:user_id, :spin_class_id, :bike)
   end
 
 end
