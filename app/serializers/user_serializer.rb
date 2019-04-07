@@ -1,5 +1,5 @@
 class UserSerializer < ActiveModel::Serializer
-  attributes :id, :username, :password, :name, :city, :role, :profile_pic
+  attributes :id, :username, :password, :name, :city, :role, :profile_pic, :photo
 
 	has_many :user_classes
   has_many :spin_classes, through: :user_classes
