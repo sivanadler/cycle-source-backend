@@ -8,8 +8,10 @@
 
 puts "beginning"
 
+url = 'db/assets/sivan.jpg'
+
 #Users
-sivan = User.create(username: "sivanadler",  password: "this", name: "Sivan Adler", city: "new york", role: "rider", profile_pic: '..app/assets/sivan.jpg')
+sivan = User.create(username: "sivanadler",  password: "this", name: "Sivan Adler", city: "new york", role: "rider", profile_pic: url)
 
 #Studios
 flywheel = Studio.create(name: "FlyWheel Sports", logo: '../assets/flywheel.png', bio: "Flywheel offers in studio and on-demand indoor cycling, strengthening, and recovery classes.", website: "https://www.flywheelsports.com/")
@@ -132,7 +134,7 @@ emily = Instructor.create(name: "Emily Fayette", hometown: "Rochester, New York"
 
 
 #SpinClasses
-morning = SpinClass.create(studio_id: 1, instructor_id: 1, location_id: 1, time: "45 MINUTE POWER RIDE", start: "201904150830EST", end: "201904150915EST")
+SpinClass.create(studio_id: 1, instructor_id: 1, location_id: 1, time: "45 MINUTE POWER RIDE", start: "201904150830EST", end: "201904150915EST")
 
 SpinClass.create(studio_id: 1, instructor_id: 1, location_id: 1, time: "60 MINUTE POWER HOUR", start: "201904151030EST", end: "201904151115EST")
 

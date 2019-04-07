@@ -11,6 +11,7 @@ class Api::V1::InstructorsController < ApplicationController
   end
 
   def create
+    byebug
     @instructor = Instructor.new(instructor_params)
     if @instructor.save
       jwt = encode_token({user_id: @instructor.id})

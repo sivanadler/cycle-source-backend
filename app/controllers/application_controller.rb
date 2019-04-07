@@ -47,6 +47,7 @@ class ApplicationController < ActionController::API
  def logged_in
    # is there a curr_user
    !!curr_user
+   !!curr_instructor
  end
 
  def authorized

@@ -7,7 +7,7 @@ class Api::V1::InstructorAuthController < ApplicationController
         # -> lets send them a token!
         # -> the token will help us identify and validate our client
 
-        jwtInstructor = encode_token({user_id: instructor.id})
+        jwtInstructor = encode_token({instructor_id: instructor.id})
         render json: {instructor: InstructorSerializer.new(instructor), jwt: jwtInstructor}
       else
         render json: {errors: "Please enter the correct username and password!"}
