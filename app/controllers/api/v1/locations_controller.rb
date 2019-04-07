@@ -1,4 +1,5 @@
 class Api::V1::LocationsController < ApplicationController
+  before_action :random_delay
 
   def index
     @locations = Location.all

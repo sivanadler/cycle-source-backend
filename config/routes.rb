@@ -11,6 +11,7 @@ Rails.application.routes.draw do
       resources :instructors
       resources :locations
       resources :sessions
+      resources :reviews
 
       # route to login
 			post "/login", to: "auth#login"
@@ -19,7 +20,7 @@ Rails.application.routes.draw do
 
 			# login on refresh
 			get '/auto_login', to: "auth#auto_login"
-      
+
       get '/instructor_auto_login', to: "instructor_auth#instructor_auto_login"
     end
   end

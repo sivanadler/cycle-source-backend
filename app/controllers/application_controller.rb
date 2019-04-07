@@ -7,6 +7,12 @@ class ApplicationController < ActionController::API
    # => enaj.fewfwaf.dfadf
  end
 
+ def random_delay
+    puts "sleeping..."
+    sleep (0..2).to_a.sample
+    puts "awake!"
+  end
+
  def decode_token
    # if headers -> let's decode it else return nil
    # JWT.decode()
