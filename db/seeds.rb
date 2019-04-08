@@ -14,26 +14,40 @@ url = 'db/assets/sivan.jpg'
 sivan = User.create(username: "sivanadler",  password: "this", name: "Sivan Adler", city: "new york", role: "rider", profile_pic: url)
 
 #Studios
-flywheel = Studio.create(name: "FlyWheel Sports", logo: '../assets/flywheel.png', bio: "Flywheel offers in studio and on-demand indoor cycling, strengthening, and recovery classes.", website: "https://www.flywheelsports.com/")
+flywheel = Studio.create(name: "FlyWheel Sports", logo: '../assets/flywheel.png', bio: "Flywheel offers in studio and on-demand indoor cycling, strengthening, and recovery classes.", website: "https://www.flywheelsports.com/", color: '#93b5ed')
 
-soulcycle = Studio.create(name: "SoulCycle", logo: '../assets/soulcycle.png', bio: "SoulCycle has revolutionized indoor cycling and taken the world of fitness by storm. 45 minutes to take your journey. Change your body. Find your SOUL.", website: "https://www.soul-cycle.com/")
+soulcycle = Studio.create(name: "SoulCycle", logo: '../assets/soulcycle.png', bio: "SoulCycle has revolutionized indoor cycling and taken the world of fitness by storm. 45 minutes to take your journey. Change your body. Find your SOUL.", website: "https://www.soul-cycle.com/" , color: '#fff959')
 
-peleton = Studio.create(name: "Peleton", logo: "../assets/peleton.png", bio: "Access high-energy workouts, instantly. Discover Peloton: streaming fitness classes to you live and on-demand.", website: "https://www.onepeloton.com/")
+peleton = Studio.create(name: "Peleton", logo: "../assets/peleton.png", bio: "Access high-energy workouts, instantly. Discover Peloton: streaming fitness classes to you live and on-demand.", website: "https://www.onepeloton.com/", color: '#ff598d')
 
-crank = Studio.create(name: "Crank NYC", logo: "../assets/crank.png", bio: "BUILT ON LOVE, SWEAT, SUPPORT.", website: "https://www.cranknyc.com/")
+crank = Studio.create(name: "Crank NYC", logo: "../assets/crank.png", bio: "BUILT ON LOVE, SWEAT, SUPPORT.", website: "https://www.cranknyc.com/", color: '#fc0707')
 
-cyc = Studio.create(name: "Cyc Fitness", logo: "../assets/cyc.jpg", bio: "CYC IS THE MUSIC-DRIVEN, HIGH-ENERGY INDOOR CYCLING EXPERIENCE DESIGNED TO WORK YOUR BODY AND MIND.", website: "https://cycfitness.com/")
+cyc = Studio.create(name: "Cyc Fitness", logo: "../assets/cyc.jpg", bio: "CYC IS THE MUSIC-DRIVEN, HIGH-ENERGY INDOOR CYCLING EXPERIENCE DESIGNED TO WORK YOUR BODY AND MIND.", website: "https://cycfitness.com/", color: '#36b577')
 
-ryde = Studio.create(name: "Revolve Fitness", logo: "../assets/revolve.jpg", bio: "RYDE Cycle's classes are designed to challenge the fiercest competitors -- and introduce novice riders to a whole new way to sweat! We're proud to offer expert-crafted workouts to help our riders reach their fitness goals with the support of our inclusive community.", website: "http://www.revolvefitness.com/")
+ryde = Studio.create(name: "Revolve Fitness", logo: "../assets/revolve.jpg", bio: "RYDE Cycle's classes are designed to challenge the fiercest competitors -- and introduce novice riders to a whole new way to sweat! We're proud to offer expert-crafted workouts to help our riders reach their fitness goals with the support of our inclusive community.", website: "http://www.revolvefitness.com/", color: '#bb8ef2')
 
-swerve = Studio.create(name: "Swerve Fitness", logo: "../assets/swerve.png", bio: "SWERVE cycling studios are located in Midtown & Flatiron of NYC. The world's first team inspired indoor cycling studio. Book a bike and join us for a ride.", website: "https://www.swervefitness.com/")
+swerve = Studio.create(name: "Swerve Fitness", logo: "../assets/swerve.png", bio: "SWERVE cycling studios are located in Midtown & Flatiron of NYC. The world's first team inspired indoor cycling studio. Book a bike and join us for a ride.", website: "https://www.swervefitness.com/", color: '#a0d8d5')
 
-sync = Studio.create(name: "Sync Studio", logo: "../assets/sync.jpg", bio: "SYNCSTUDIO is a lifestyle studio which offers a variety of group exercise classes, personal training and events to help every individual reach their personal best", website: "http://www.syncstudio.net/brooklyn/")
+sync = Studio.create(name: "Sync Studio", logo: "../assets/sync.jpg", bio: "SYNCSTUDIO is a lifestyle studio which offers a variety of group exercise classes, personal training and events to help every individual reach their personal best", website: "http://www.syncstudio.net/brooklyn/", color: '#efb326')
 
-aqua = Studio.create(name: "Aqua Studio NY", logo: "../assets/aqua.png", bio: "The tri-level boutique studio in the heart of TriBeCa offers you the best of high performance fitness with the ambiance of modern wellness.", website: "https://www.aquastudiony.com/")
+aqua = Studio.create(name: "Aqua Studio NY", logo: "../assets/aqua.png", bio: "The tri-level boutique studio in the heart of TriBeCa offers you the best of high performance fitness with the ambiance of modern wellness.", website: "https://www.aquastudiony.com/", color: '#70edef')
 
 #Instructors
 emily = Instructor.create(name: "Emily Fayette", hometown: "Rochester, New York", fun_fact: "I'm training for a marathon", teaching_style: "The Team Captain", username: "healthyhustle", password: "1234", role: 'instructor')
+
+maya = Instructor.create(name: "Maya Elias", hometown: "New York, New York", fun_fact: "I've been spinning for 10 years", teaching_style: "The Entertainer", username: "melias101", password: "1234", role: 'instructor')
+
+mario = Instructor.create(name: "Mario Martinez", hometown: "New York, New York", fun_fact: "I change my hair color every month", teaching_style: "The Visionary", username: "mmartinez", password: "1234", role: 'instructor')
+
+alison = Instructor.create(name: "Alison Cohen", hometown: "Great Neck, New York", fun_fact: "I attended graduate school at NYU for clinical nutrition while teaching group fitness classes around NYC.", teaching_style: "The Rebel", username: "acohen101", password: "1234", role: 'instructor')
+
+cedric = Instructor.create(name: "Cedric Green", hometown: "New York, New York", fun_fact: "I love running marathons", teaching_style: "The Entertainer", username: "cgreen", password: "1234", role: 'instructor')
+
+caitlin = Instructor.create(name: "Caitlin Jones", hometown: "New York, New York", fun_fact: "I used to be an NBA dancer", teaching_style: "The Visionary", username: "caitlinjones", password: "1234", role: 'instructor')
+
+jared = Instructor.create(name: "Jared Poulin", hometown: "New York, New York", fun_fact: "I'm OBSESSED with music", teaching_style: "The Team Captain", username: "jpoulin", password: "1234", role: 'instructor')
+
+justin = Instructor.create(name: "Justin Flexen", hometown: "New York, New York", fun_fact: "I'm always down for a good EDM beat drop", teaching_style: "The Rebel", username: "jflex", password: "1234", role: 'instructor')
 
 
 #Location
@@ -134,9 +148,15 @@ emily = Instructor.create(name: "Emily Fayette", hometown: "Rochester, New York"
 
 
 #SpinClasses
-SpinClass.create(studio_id: 1, instructor_id: 1, location_id: 1, time: "45 MINUTE POWER RIDE", start: "201904150830EST", end: "201904150915EST")
+SpinClass.create(studio_id: 1, instructor_id: emily.id, location_id: 1, time: "45 MINUTE POWER RIDE", start: "201904150830EST", end: "201904150915EST")
 
-SpinClass.create(studio_id: 1, instructor_id: 1, location_id: 1, time: "60 MINUTE POWER HOUR", start: "201904151030EST", end: "201904151115EST")
+SpinClass.create(studio_id: 1, instructor_id: emily.id, location_id: 1, time: "60 MINUTE POWER HOUR", start: "201904151030EST", end: "201904151130EST")
+
+SpinClass.create(studio_id: 2, instructor_id: maya.id, location_id: 17, time: "60 MINUTE POWER HOUR", start: "201904140830EST", end: "201904140930EST")
+
+SpinClass.create(studio_id: 1, instructor_id: mario.id, location_id: 3, time: "60 MINUTE POWER HOUR", start: "201904151230EST", end: "201904150130EST")
+
+SpinClass.create(studio_id: 1, instructor_id: alison.id, location_id: 4, time: "45 MINUTE POWER RIDE", start: "201904141130EST", end: "201904141215EST")
 
 #UserClasses
 # UserClass.create(user_id: 1, spin_class_id: 1)

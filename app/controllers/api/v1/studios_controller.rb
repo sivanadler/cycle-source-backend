@@ -30,7 +30,7 @@ class Api::V1::StudiosController < ApplicationController
   private
 
   def studio_params
-    params.require(:studio).permit(:name)
+    params.require(:studio).permit(:name, :logo, :bio, :website, :color)
   end
 
 end

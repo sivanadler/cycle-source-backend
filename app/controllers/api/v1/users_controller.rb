@@ -2,7 +2,7 @@ class Api::V1::UsersController < ApplicationController
 
   def index
     @users = User.all
-    render json: @users
+    render json: @users, :inclide => :favorites
   end
 
   def show
@@ -21,6 +21,7 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def update
+    byebug
     @user = User.find(params[:id])
     @user.update(user_params)
     render json: @user
