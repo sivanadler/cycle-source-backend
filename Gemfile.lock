@@ -62,12 +62,16 @@ GEM
     aws-sigv4 (1.1.0)
       aws-eventstream (~> 1.0, >= 1.0.2)
     bcrypt (3.1.12)
-    bootsnap (1.4.2)
+    bootsnap (1.4.3)
       msgpack (~> 1.0)
     builder (3.2.3)
     byebug (11.0.1)
     concurrent-ruby (1.1.5)
     crass (1.0.4)
+    dotenv (2.7.2)
+    dotenv-rails (2.7.2)
+      dotenv (= 2.7.2)
+      railties (>= 3.2, < 6.1)
     erubi (1.8.0)
     ffi (1.10.0)
     globalid (0.4.2)
@@ -156,10 +160,11 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers (= 0.9.3)
-  aws-sdk-s3
+  aws-sdk-s3 (~> 1)
   bcrypt (~> 3.1.7)
   bootsnap (>= 1.1.0)
   byebug
+  dotenv-rails
   jwt
   listen (>= 3.0.5, < 3.2)
   puma (~> 3.11)

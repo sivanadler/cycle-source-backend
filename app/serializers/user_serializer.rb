@@ -1,6 +1,6 @@
 class UserSerializer < ActiveModel::Serializer
   include Rails.application.routes.url_helpers
-  attributes :id, :username, :password, :name, :city, :role, :profile_pic #:imageUrl
+  attributes :id, :username, :password, :name, :city, :role, :profile_pic, :imageUrl
 
 	has_many :user_classes
   has_many :spin_classes, through: :user_classes
