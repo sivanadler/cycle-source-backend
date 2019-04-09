@@ -12,9 +12,7 @@ class Api::V1::UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
-    byebug
     if @user.save
-      byebug
       jwt = encode_token({user_id: @user.id})
       render json: {user: UserSerializer.new(@user), jwt: jwt}
     else
@@ -23,7 +21,6 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def update
-    byebug
     @user = User.find(params[:id])
     @user.update(user_params)
     render json: @user
@@ -38,7 +35,7 @@ class Api::V1::UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:username, :password, :name, :city, :role, :profile_pic, :photo)
+    params.permit(:username, :password, :name, :city, :role, :profile_pic, :photo)
   end
 
 end

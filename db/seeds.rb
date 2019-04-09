@@ -13,24 +13,42 @@ url = 'db/assets/sivan.jpg'
 #Users
 sivan = User.create(username: "sivanadler",  password: "this", name: "Sivan Adler", city: "new york", role: "rider", profile_pic: url)
 
+flyImg = 'https://s3.amazonaws.com/cyclesource-dev/flywheel.png?response-content-disposition=inline&X-Amz-Security-Token=AgoGb3JpZ2luEOv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSKAAjPeKHe0ySeRqN7vLLUMsC6ADb2cyiPQFwXlAQZdks8U%2BQc9XFmP2nhkGgk2CJ81ozS1M2rf97%2FH3YG56pp3eAWmB3EbD%2FJmPDCJM5K95qp8EuWcZXA571Owc3yveL3Pr2GhF9DXnb2JdZ1ZGCqGpMDUUPb6BQRXrOaOhZfF2zIpBKKlSIeQJhSBZHodm53z7%2Bgr43yPmfdPVH%2FbP65c16cotLKcOsAoXiqOxztuMiUJMYtkHZRW1wWKjitTWqNLt2KRLNh6M7bjcBS7XqwSdk2jEhYYPZVR0CUjOoyF3bN42oDycYJgrn1J2U0SwPxO9e75pJvLZRlJs4tmpOvdtksq2wMIYBAAGgw0OTAzODg5ODUzMjIiDLhyFyFtV0I%2FZ5fvIyq4AyXJ9JYlxFILByi3MgJHq8xIJ5XC%2F%2BvkKPElngh0dbRAr4UzeBRJQREsVXEkvf%2BB8CIT6qNOIcunn8pjJFEM8WQ7oySgLi2XDCN8K4C6LQtIcKpiOCGMPhZlM7lQ7%2BeqP0eelOaO5SdTusxl3n2ddtMsWZQniWeG9O8Jn3nOadSHGiFmlrvFOTVSiVPLQf293%2F6g5baI20VcRuqXuNOPemiQkTbSdLheyhj1RlUZwelhDcJ%2BLg3D4g1t3pvbYrDVCwu%2BAWK9dEQb5yIrGasY2pEVfXXBtJeZAFbVyBT4Q%2B5aG5BAo0kVWd3KwlYmXZV02xrwBbb2SM1aEc2EUdjShdB%2BakbwPt%2BkZzbHot1Kc%2Bsg4iM0x8evmNp2GjzzZv9R%2F4MhRw8F9jZeXnf3dR44e3wAmXN%2FiFezGR8NzadsYa%2B0pCK4JISBbadXYhuK3suvse2RbunmckvzxthW8c5hX9uU0C3XqqIyniRWNsHtkQ5lcBEO%2BB4MTArE6HWGp4terNV%2BUXOiVbOerWmCgxgq8MH2ricFQmNaS4%2FgrpVEzoaS5mYS9wy8LaDqO70SNyGnwk9nhwyOjd24MKXlsuUF&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190409T154907Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAXELLWCXVA3BZC4Q2%2F20190409%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=0295df0709af908761d58cd14ef1d4829c44756ff370ee0530cce766b5236b3e'
+
+soulImg= "https://s3.amazonaws.com/cyclesource-dev/soulcycle.png?response-content-disposition=inline&X-Amz-Security-Token=AgoGb3JpZ2luEOv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSKAAjPeKHe0ySeRqN7vLLUMsC6ADb2cyiPQFwXlAQZdks8U%2BQc9XFmP2nhkGgk2CJ81ozS1M2rf97%2FH3YG56pp3eAWmB3EbD%2FJmPDCJM5K95qp8EuWcZXA571Owc3yveL3Pr2GhF9DXnb2JdZ1ZGCqGpMDUUPb6BQRXrOaOhZfF2zIpBKKlSIeQJhSBZHodm53z7%2Bgr43yPmfdPVH%2FbP65c16cotLKcOsAoXiqOxztuMiUJMYtkHZRW1wWKjitTWqNLt2KRLNh6M7bjcBS7XqwSdk2jEhYYPZVR0CUjOoyF3bN42oDycYJgrn1J2U0SwPxO9e75pJvLZRlJs4tmpOvdtksq2wMIYBAAGgw0OTAzODg5ODUzMjIiDLhyFyFtV0I%2FZ5fvIyq4AyXJ9JYlxFILByi3MgJHq8xIJ5XC%2F%2BvkKPElngh0dbRAr4UzeBRJQREsVXEkvf%2BB8CIT6qNOIcunn8pjJFEM8WQ7oySgLi2XDCN8K4C6LQtIcKpiOCGMPhZlM7lQ7%2BeqP0eelOaO5SdTusxl3n2ddtMsWZQniWeG9O8Jn3nOadSHGiFmlrvFOTVSiVPLQf293%2F6g5baI20VcRuqXuNOPemiQkTbSdLheyhj1RlUZwelhDcJ%2BLg3D4g1t3pvbYrDVCwu%2BAWK9dEQb5yIrGasY2pEVfXXBtJeZAFbVyBT4Q%2B5aG5BAo0kVWd3KwlYmXZV02xrwBbb2SM1aEc2EUdjShdB%2BakbwPt%2BkZzbHot1Kc%2Bsg4iM0x8evmNp2GjzzZv9R%2F4MhRw8F9jZeXnf3dR44e3wAmXN%2FiFezGR8NzadsYa%2B0pCK4JISBbadXYhuK3suvse2RbunmckvzxthW8c5hX9uU0C3XqqIyniRWNsHtkQ5lcBEO%2BB4MTArE6HWGp4terNV%2BUXOiVbOerWmCgxgq8MH2ricFQmNaS4%2FgrpVEzoaS5mYS9wy8LaDqO70SNyGnwk9nhwyOjd24MKXlsuUF&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190409T155229Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAXELLWCXVA3BZC4Q2%2F20190409%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=314ea15052d85578c5c292b9699b355f57cf24e5c223ccc90ee89ca550c1b905"
+
+peletonImg = "https://s3.amazonaws.com/cyclesource-dev/peleton.png?response-content-disposition=inline&X-Amz-Security-Token=AgoGb3JpZ2luEOv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSKAAjPeKHe0ySeRqN7vLLUMsC6ADb2cyiPQFwXlAQZdks8U%2BQc9XFmP2nhkGgk2CJ81ozS1M2rf97%2FH3YG56pp3eAWmB3EbD%2FJmPDCJM5K95qp8EuWcZXA571Owc3yveL3Pr2GhF9DXnb2JdZ1ZGCqGpMDUUPb6BQRXrOaOhZfF2zIpBKKlSIeQJhSBZHodm53z7%2Bgr43yPmfdPVH%2FbP65c16cotLKcOsAoXiqOxztuMiUJMYtkHZRW1wWKjitTWqNLt2KRLNh6M7bjcBS7XqwSdk2jEhYYPZVR0CUjOoyF3bN42oDycYJgrn1J2U0SwPxO9e75pJvLZRlJs4tmpOvdtksq2wMIYBAAGgw0OTAzODg5ODUzMjIiDLhyFyFtV0I%2FZ5fvIyq4AyXJ9JYlxFILByi3MgJHq8xIJ5XC%2F%2BvkKPElngh0dbRAr4UzeBRJQREsVXEkvf%2BB8CIT6qNOIcunn8pjJFEM8WQ7oySgLi2XDCN8K4C6LQtIcKpiOCGMPhZlM7lQ7%2BeqP0eelOaO5SdTusxl3n2ddtMsWZQniWeG9O8Jn3nOadSHGiFmlrvFOTVSiVPLQf293%2F6g5baI20VcRuqXuNOPemiQkTbSdLheyhj1RlUZwelhDcJ%2BLg3D4g1t3pvbYrDVCwu%2BAWK9dEQb5yIrGasY2pEVfXXBtJeZAFbVyBT4Q%2B5aG5BAo0kVWd3KwlYmXZV02xrwBbb2SM1aEc2EUdjShdB%2BakbwPt%2BkZzbHot1Kc%2Bsg4iM0x8evmNp2GjzzZv9R%2F4MhRw8F9jZeXnf3dR44e3wAmXN%2FiFezGR8NzadsYa%2B0pCK4JISBbadXYhuK3suvse2RbunmckvzxthW8c5hX9uU0C3XqqIyniRWNsHtkQ5lcBEO%2BB4MTArE6HWGp4terNV%2BUXOiVbOerWmCgxgq8MH2ricFQmNaS4%2FgrpVEzoaS5mYS9wy8LaDqO70SNyGnwk9nhwyOjd24MKXlsuUF&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190409T155614Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAXELLWCXVA3BZC4Q2%2F20190409%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=6b3e80411b3be59ac618f425bd0d8d85abd577c422cfa94fe70f01b0bc64e4d4"
+
+crankImg = "https://s3.amazonaws.com/cyclesource-dev/crank.png?response-content-disposition=inline&X-Amz-Security-Token=AgoGb3JpZ2luEOv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSKAAjPeKHe0ySeRqN7vLLUMsC6ADb2cyiPQFwXlAQZdks8U%2BQc9XFmP2nhkGgk2CJ81ozS1M2rf97%2FH3YG56pp3eAWmB3EbD%2FJmPDCJM5K95qp8EuWcZXA571Owc3yveL3Pr2GhF9DXnb2JdZ1ZGCqGpMDUUPb6BQRXrOaOhZfF2zIpBKKlSIeQJhSBZHodm53z7%2Bgr43yPmfdPVH%2FbP65c16cotLKcOsAoXiqOxztuMiUJMYtkHZRW1wWKjitTWqNLt2KRLNh6M7bjcBS7XqwSdk2jEhYYPZVR0CUjOoyF3bN42oDycYJgrn1J2U0SwPxO9e75pJvLZRlJs4tmpOvdtksq2wMIYBAAGgw0OTAzODg5ODUzMjIiDLhyFyFtV0I%2FZ5fvIyq4AyXJ9JYlxFILByi3MgJHq8xIJ5XC%2F%2BvkKPElngh0dbRAr4UzeBRJQREsVXEkvf%2BB8CIT6qNOIcunn8pjJFEM8WQ7oySgLi2XDCN8K4C6LQtIcKpiOCGMPhZlM7lQ7%2BeqP0eelOaO5SdTusxl3n2ddtMsWZQniWeG9O8Jn3nOadSHGiFmlrvFOTVSiVPLQf293%2F6g5baI20VcRuqXuNOPemiQkTbSdLheyhj1RlUZwelhDcJ%2BLg3D4g1t3pvbYrDVCwu%2BAWK9dEQb5yIrGasY2pEVfXXBtJeZAFbVyBT4Q%2B5aG5BAo0kVWd3KwlYmXZV02xrwBbb2SM1aEc2EUdjShdB%2BakbwPt%2BkZzbHot1Kc%2Bsg4iM0x8evmNp2GjzzZv9R%2F4MhRw8F9jZeXnf3dR44e3wAmXN%2FiFezGR8NzadsYa%2B0pCK4JISBbadXYhuK3suvse2RbunmckvzxthW8c5hX9uU0C3XqqIyniRWNsHtkQ5lcBEO%2BB4MTArE6HWGp4terNV%2BUXOiVbOerWmCgxgq8MH2ricFQmNaS4%2FgrpVEzoaS5mYS9wy8LaDqO70SNyGnwk9nhwyOjd24MKXlsuUF&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190409T155637Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAXELLWCXVA3BZC4Q2%2F20190409%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=08d3f0c9cb81c33a984f6f153328539329041d2f878d8d51e776f736b9c266dd"
+
+cycImg = "https://s3.amazonaws.com/cyclesource-dev/cyc.jpg?response-content-disposition=inline&X-Amz-Security-Token=AgoGb3JpZ2luEOv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSKAAjPeKHe0ySeRqN7vLLUMsC6ADb2cyiPQFwXlAQZdks8U%2BQc9XFmP2nhkGgk2CJ81ozS1M2rf97%2FH3YG56pp3eAWmB3EbD%2FJmPDCJM5K95qp8EuWcZXA571Owc3yveL3Pr2GhF9DXnb2JdZ1ZGCqGpMDUUPb6BQRXrOaOhZfF2zIpBKKlSIeQJhSBZHodm53z7%2Bgr43yPmfdPVH%2FbP65c16cotLKcOsAoXiqOxztuMiUJMYtkHZRW1wWKjitTWqNLt2KRLNh6M7bjcBS7XqwSdk2jEhYYPZVR0CUjOoyF3bN42oDycYJgrn1J2U0SwPxO9e75pJvLZRlJs4tmpOvdtksq2wMIYBAAGgw0OTAzODg5ODUzMjIiDLhyFyFtV0I%2FZ5fvIyq4AyXJ9JYlxFILByi3MgJHq8xIJ5XC%2F%2BvkKPElngh0dbRAr4UzeBRJQREsVXEkvf%2BB8CIT6qNOIcunn8pjJFEM8WQ7oySgLi2XDCN8K4C6LQtIcKpiOCGMPhZlM7lQ7%2BeqP0eelOaO5SdTusxl3n2ddtMsWZQniWeG9O8Jn3nOadSHGiFmlrvFOTVSiVPLQf293%2F6g5baI20VcRuqXuNOPemiQkTbSdLheyhj1RlUZwelhDcJ%2BLg3D4g1t3pvbYrDVCwu%2BAWK9dEQb5yIrGasY2pEVfXXBtJeZAFbVyBT4Q%2B5aG5BAo0kVWd3KwlYmXZV02xrwBbb2SM1aEc2EUdjShdB%2BakbwPt%2BkZzbHot1Kc%2Bsg4iM0x8evmNp2GjzzZv9R%2F4MhRw8F9jZeXnf3dR44e3wAmXN%2FiFezGR8NzadsYa%2B0pCK4JISBbadXYhuK3suvse2RbunmckvzxthW8c5hX9uU0C3XqqIyniRWNsHtkQ5lcBEO%2BB4MTArE6HWGp4terNV%2BUXOiVbOerWmCgxgq8MH2ricFQmNaS4%2FgrpVEzoaS5mYS9wy8LaDqO70SNyGnwk9nhwyOjd24MKXlsuUF&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190409T155710Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAXELLWCXVA3BZC4Q2%2F20190409%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=776e397e58c00179aabd4488aae7dddd20f581c397458e211a225220a5981792"
+
+rydeImg = "https://s3.amazonaws.com/cyclesource-dev/revolve.jpg?response-content-disposition=inline&X-Amz-Security-Token=AgoGb3JpZ2luEOv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSKAAjPeKHe0ySeRqN7vLLUMsC6ADb2cyiPQFwXlAQZdks8U%2BQc9XFmP2nhkGgk2CJ81ozS1M2rf97%2FH3YG56pp3eAWmB3EbD%2FJmPDCJM5K95qp8EuWcZXA571Owc3yveL3Pr2GhF9DXnb2JdZ1ZGCqGpMDUUPb6BQRXrOaOhZfF2zIpBKKlSIeQJhSBZHodm53z7%2Bgr43yPmfdPVH%2FbP65c16cotLKcOsAoXiqOxztuMiUJMYtkHZRW1wWKjitTWqNLt2KRLNh6M7bjcBS7XqwSdk2jEhYYPZVR0CUjOoyF3bN42oDycYJgrn1J2U0SwPxO9e75pJvLZRlJs4tmpOvdtksq2wMIYBAAGgw0OTAzODg5ODUzMjIiDLhyFyFtV0I%2FZ5fvIyq4AyXJ9JYlxFILByi3MgJHq8xIJ5XC%2F%2BvkKPElngh0dbRAr4UzeBRJQREsVXEkvf%2BB8CIT6qNOIcunn8pjJFEM8WQ7oySgLi2XDCN8K4C6LQtIcKpiOCGMPhZlM7lQ7%2BeqP0eelOaO5SdTusxl3n2ddtMsWZQniWeG9O8Jn3nOadSHGiFmlrvFOTVSiVPLQf293%2F6g5baI20VcRuqXuNOPemiQkTbSdLheyhj1RlUZwelhDcJ%2BLg3D4g1t3pvbYrDVCwu%2BAWK9dEQb5yIrGasY2pEVfXXBtJeZAFbVyBT4Q%2B5aG5BAo0kVWd3KwlYmXZV02xrwBbb2SM1aEc2EUdjShdB%2BakbwPt%2BkZzbHot1Kc%2Bsg4iM0x8evmNp2GjzzZv9R%2F4MhRw8F9jZeXnf3dR44e3wAmXN%2FiFezGR8NzadsYa%2B0pCK4JISBbadXYhuK3suvse2RbunmckvzxthW8c5hX9uU0C3XqqIyniRWNsHtkQ5lcBEO%2BB4MTArE6HWGp4terNV%2BUXOiVbOerWmCgxgq8MH2ricFQmNaS4%2FgrpVEzoaS5mYS9wy8LaDqO70SNyGnwk9nhwyOjd24MKXlsuUF&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190409T155738Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAXELLWCXVA3BZC4Q2%2F20190409%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=b7f1bbfb8dd791f2abb7d0209ca5e5046d4059f61bd8c5ec9c14cf670e2dc50b"
+
+swerveImg = "https://s3.amazonaws.com/cyclesource-dev/swerve.png?response-content-disposition=inline&X-Amz-Security-Token=AgoGb3JpZ2luEOv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSKAAjPeKHe0ySeRqN7vLLUMsC6ADb2cyiPQFwXlAQZdks8U%2BQc9XFmP2nhkGgk2CJ81ozS1M2rf97%2FH3YG56pp3eAWmB3EbD%2FJmPDCJM5K95qp8EuWcZXA571Owc3yveL3Pr2GhF9DXnb2JdZ1ZGCqGpMDUUPb6BQRXrOaOhZfF2zIpBKKlSIeQJhSBZHodm53z7%2Bgr43yPmfdPVH%2FbP65c16cotLKcOsAoXiqOxztuMiUJMYtkHZRW1wWKjitTWqNLt2KRLNh6M7bjcBS7XqwSdk2jEhYYPZVR0CUjOoyF3bN42oDycYJgrn1J2U0SwPxO9e75pJvLZRlJs4tmpOvdtksq2wMIYBAAGgw0OTAzODg5ODUzMjIiDLhyFyFtV0I%2FZ5fvIyq4AyXJ9JYlxFILByi3MgJHq8xIJ5XC%2F%2BvkKPElngh0dbRAr4UzeBRJQREsVXEkvf%2BB8CIT6qNOIcunn8pjJFEM8WQ7oySgLi2XDCN8K4C6LQtIcKpiOCGMPhZlM7lQ7%2BeqP0eelOaO5SdTusxl3n2ddtMsWZQniWeG9O8Jn3nOadSHGiFmlrvFOTVSiVPLQf293%2F6g5baI20VcRuqXuNOPemiQkTbSdLheyhj1RlUZwelhDcJ%2BLg3D4g1t3pvbYrDVCwu%2BAWK9dEQb5yIrGasY2pEVfXXBtJeZAFbVyBT4Q%2B5aG5BAo0kVWd3KwlYmXZV02xrwBbb2SM1aEc2EUdjShdB%2BakbwPt%2BkZzbHot1Kc%2Bsg4iM0x8evmNp2GjzzZv9R%2F4MhRw8F9jZeXnf3dR44e3wAmXN%2FiFezGR8NzadsYa%2B0pCK4JISBbadXYhuK3suvse2RbunmckvzxthW8c5hX9uU0C3XqqIyniRWNsHtkQ5lcBEO%2BB4MTArE6HWGp4terNV%2BUXOiVbOerWmCgxgq8MH2ricFQmNaS4%2FgrpVEzoaS5mYS9wy8LaDqO70SNyGnwk9nhwyOjd24MKXlsuUF&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190409T155918Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAXELLWCXVA3BZC4Q2%2F20190409%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=844dd22d1a1fd611a1dfab06876fac33236f6ed010a717d9f50a7d5e44d45098"
+
+syncImg = "https://s3.amazonaws.com/cyclesource-dev/sync.jpg?response-content-disposition=inline&X-Amz-Security-Token=AgoGb3JpZ2luEOv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSKAAjPeKHe0ySeRqN7vLLUMsC6ADb2cyiPQFwXlAQZdks8U%2BQc9XFmP2nhkGgk2CJ81ozS1M2rf97%2FH3YG56pp3eAWmB3EbD%2FJmPDCJM5K95qp8EuWcZXA571Owc3yveL3Pr2GhF9DXnb2JdZ1ZGCqGpMDUUPb6BQRXrOaOhZfF2zIpBKKlSIeQJhSBZHodm53z7%2Bgr43yPmfdPVH%2FbP65c16cotLKcOsAoXiqOxztuMiUJMYtkHZRW1wWKjitTWqNLt2KRLNh6M7bjcBS7XqwSdk2jEhYYPZVR0CUjOoyF3bN42oDycYJgrn1J2U0SwPxO9e75pJvLZRlJs4tmpOvdtksq2wMIYBAAGgw0OTAzODg5ODUzMjIiDLhyFyFtV0I%2FZ5fvIyq4AyXJ9JYlxFILByi3MgJHq8xIJ5XC%2F%2BvkKPElngh0dbRAr4UzeBRJQREsVXEkvf%2BB8CIT6qNOIcunn8pjJFEM8WQ7oySgLi2XDCN8K4C6LQtIcKpiOCGMPhZlM7lQ7%2BeqP0eelOaO5SdTusxl3n2ddtMsWZQniWeG9O8Jn3nOadSHGiFmlrvFOTVSiVPLQf293%2F6g5baI20VcRuqXuNOPemiQkTbSdLheyhj1RlUZwelhDcJ%2BLg3D4g1t3pvbYrDVCwu%2BAWK9dEQb5yIrGasY2pEVfXXBtJeZAFbVyBT4Q%2B5aG5BAo0kVWd3KwlYmXZV02xrwBbb2SM1aEc2EUdjShdB%2BakbwPt%2BkZzbHot1Kc%2Bsg4iM0x8evmNp2GjzzZv9R%2F4MhRw8F9jZeXnf3dR44e3wAmXN%2FiFezGR8NzadsYa%2B0pCK4JISBbadXYhuK3suvse2RbunmckvzxthW8c5hX9uU0C3XqqIyniRWNsHtkQ5lcBEO%2BB4MTArE6HWGp4terNV%2BUXOiVbOerWmCgxgq8MH2ricFQmNaS4%2FgrpVEzoaS5mYS9wy8LaDqO70SNyGnwk9nhwyOjd24MKXlsuUF&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190409T155956Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAXELLWCXVA3BZC4Q2%2F20190409%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=1e301d857fcc53cd5aa7006aea8d0a2b1f5dccac1aaa23781984dd2e1d30b3bc"
+
+aquaImg = "https://s3.amazonaws.com/cyclesource-dev/aqua.png?response-content-disposition=inline&X-Amz-Security-Token=AgoGb3JpZ2luEOv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSKAAjPeKHe0ySeRqN7vLLUMsC6ADb2cyiPQFwXlAQZdks8U%2BQc9XFmP2nhkGgk2CJ81ozS1M2rf97%2FH3YG56pp3eAWmB3EbD%2FJmPDCJM5K95qp8EuWcZXA571Owc3yveL3Pr2GhF9DXnb2JdZ1ZGCqGpMDUUPb6BQRXrOaOhZfF2zIpBKKlSIeQJhSBZHodm53z7%2Bgr43yPmfdPVH%2FbP65c16cotLKcOsAoXiqOxztuMiUJMYtkHZRW1wWKjitTWqNLt2KRLNh6M7bjcBS7XqwSdk2jEhYYPZVR0CUjOoyF3bN42oDycYJgrn1J2U0SwPxO9e75pJvLZRlJs4tmpOvdtksq2wMIYBAAGgw0OTAzODg5ODUzMjIiDLhyFyFtV0I%2FZ5fvIyq4AyXJ9JYlxFILByi3MgJHq8xIJ5XC%2F%2BvkKPElngh0dbRAr4UzeBRJQREsVXEkvf%2BB8CIT6qNOIcunn8pjJFEM8WQ7oySgLi2XDCN8K4C6LQtIcKpiOCGMPhZlM7lQ7%2BeqP0eelOaO5SdTusxl3n2ddtMsWZQniWeG9O8Jn3nOadSHGiFmlrvFOTVSiVPLQf293%2F6g5baI20VcRuqXuNOPemiQkTbSdLheyhj1RlUZwelhDcJ%2BLg3D4g1t3pvbYrDVCwu%2BAWK9dEQb5yIrGasY2pEVfXXBtJeZAFbVyBT4Q%2B5aG5BAo0kVWd3KwlYmXZV02xrwBbb2SM1aEc2EUdjShdB%2BakbwPt%2BkZzbHot1Kc%2Bsg4iM0x8evmNp2GjzzZv9R%2F4MhRw8F9jZeXnf3dR44e3wAmXN%2FiFezGR8NzadsYa%2B0pCK4JISBbadXYhuK3suvse2RbunmckvzxthW8c5hX9uU0C3XqqIyniRWNsHtkQ5lcBEO%2BB4MTArE6HWGp4terNV%2BUXOiVbOerWmCgxgq8MH2ricFQmNaS4%2FgrpVEzoaS5mYS9wy8LaDqO70SNyGnwk9nhwyOjd24MKXlsuUF&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190409T160017Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAXELLWCXVA3BZC4Q2%2F20190409%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=43c5a8b296be430d867f07766f1e576ac6f2228b0b1473e2fbc43cde4b1e076e"
+
 #Studios
-flywheel = Studio.create(name: "FlyWheel Sports", logo: '../assets/flywheel.png', bio: "Flywheel offers in studio and on-demand indoor cycling, strengthening, and recovery classes.", website: "https://www.flywheelsports.com/", color: '#93b5ed')
+flywheel = Studio.create(name: "FlyWheel Sports", logo: flyImg, bio: "Flywheel offers in studio and on-demand indoor cycling, strengthening, and recovery classes.", website: "https://www.flywheelsports.com/", color: '#93b5ed')
 
-soulcycle = Studio.create(name: "SoulCycle", logo: '../assets/soulcycle.png', bio: "SoulCycle has revolutionized indoor cycling and taken the world of fitness by storm. 45 minutes to take your journey. Change your body. Find your SOUL.", website: "https://www.soul-cycle.com/" , color: '#fff959')
+soulcycle = Studio.create(name: "SoulCycle", logo: soulImg, bio: "SoulCycle has revolutionized indoor cycling and taken the world of fitness by storm. 45 minutes to take your journey. Change your body. Find your SOUL.", website: "https://www.soul-cycle.com/" , color: '#fff959')
 
-peleton = Studio.create(name: "Peleton", logo: "../assets/peleton.png", bio: "Access high-energy workouts, instantly. Discover Peloton: streaming fitness classes to you live and on-demand.", website: "https://www.onepeloton.com/", color: '#ff598d')
+peleton = Studio.create(name: "Peleton", logo: peletonImg, bio: "Access high-energy workouts, instantly. Discover Peloton: streaming fitness classes to you live and on-demand.", website: "https://www.onepeloton.com/", color: '#ff598d')
 
-crank = Studio.create(name: "Crank", logo: "../assets/crank.png", bio: "BUILT ON LOVE, SWEAT, SUPPORT.", website: "https://www.cranknyc.com/", color: '#e55757')
+crank = Studio.create(name: "Crank", logo: crankImg, bio: "BUILT ON LOVE, SWEAT, SUPPORT.", website: "https://www.cranknyc.com/", color: '#e55757')
 
-cyc = Studio.create(name: "Cyc Fitness", logo: "../assets/cyc.jpg", bio: "CYC IS THE MUSIC-DRIVEN, HIGH-ENERGY INDOOR CYCLING EXPERIENCE DESIGNED TO WORK YOUR BODY AND MIND.", website: "https://cycfitness.com/", color: '#4ac489')
+cyc = Studio.create(name: "Cyc Fitness", logo: cycImg, bio: "CYC IS THE MUSIC-DRIVEN, HIGH-ENERGY INDOOR CYCLING EXPERIENCE DESIGNED TO WORK YOUR BODY AND MIND.", website: "https://cycfitness.com/", color: '#4ac489')
 
-ryde = Studio.create(name: "Ryde Fitness", logo: "../assets/revolve.jpg", bio: "RYDE Cycle's classes are designed to challenge the fiercest competitors -- and introduce novice riders to a whole new way to sweat! We're proud to offer expert-crafted workouts to help our riders reach their fitness goals with the support of our inclusive community.", website: "http://www.revolvefitness.com/", color: '#bb8ef2')
+ryde = Studio.create(name: "Ryde Fitness", logo: rydeImg, bio: "RYDE Cycle's classes are designed to challenge the fiercest competitors -- and introduce novice riders to a whole new way to sweat! We're proud to offer expert-crafted workouts to help our riders reach their fitness goals with the support of our inclusive community.", website: "http://www.revolvefitness.com/", color: '#bb8ef2')
 
-swerve = Studio.create(name: "Swerve Fitness", logo: "../assets/swerve.png", bio: "SWERVE cycling studios are located in Midtown & Flatiron of NYC. The world's first team inspired indoor cycling studio. Book a bike and join us for a ride.", website: "https://www.swervefitness.com/", color: '#a0d8d5')
+swerve = Studio.create(name: "Swerve Fitness", logo: swerveImg, bio: "SWERVE cycling studios are located in Midtown & Flatiron of NYC. The world's first team inspired indoor cycling studio. Book a bike and join us for a ride.", website: "https://www.swervefitness.com/", color: '#a0d8d5')
 
-sync = Studio.create(name: "Sync Studio", logo: "../assets/sync.jpg", bio: "SYNCSTUDIO is a lifestyle studio which offers a variety of group exercise classes, personal training and events to help every individual reach their personal best", website: "http://www.syncstudio.net/brooklyn/", color: '#efb326')
+sync = Studio.create(name: "Sync Studio", logo: syncImg, bio: "SYNCSTUDIO is a lifestyle studio which offers a variety of group exercise classes, personal training and events to help every individual reach their personal best", website: "http://www.syncstudio.net/brooklyn/", color: '#efb326')
 
-aqua = Studio.create(name: "Aqua Studio", logo: "../assets/aqua.png", bio: "The tri-level boutique studio in the heart of TriBeCa offers you the best of high performance fitness with the ambiance of modern wellness.", website: "https://www.aquastudiony.com/", color: '#70edef')
+aqua = Studio.create(name: "Aqua Studio", logo: aquaImg, bio: "The tri-level boutique studio in the heart of TriBeCa offers you the best of high performance fitness with the ambiance of modern wellness.", website: "https://www.aquastudiony.com/", color: '#70edef')
 
 #Instructors
   #FLYWHEEL INSTRUCTORS
@@ -83,6 +101,48 @@ aqua = Studio.create(name: "Aqua Studio", logo: "../assets/aqua.png", bio: "The 
   aaron = Instructor.create(name: "Aaron Albert", hometown: "New York, New York", fun_fact: "My go to cocktail is a dirty gin martini", teaching_style: "The Team Captain", username: "aaron", password: "1234", role: 'instructor')
 
   elena = Instructor.create(name: "Elena Koshivaki", hometown: "New York, New York", fun_fact: "I'm a kombucha lover", teaching_style: "The Rebel", username: "elena", password: "1234", role: 'instructor')
+
+  #RYDE INSTRUCTORS
+  dallis = Instructor.create(name: "Dallis Williams", hometown: "New York, New York", fun_fact: "I worked for many years in the corporate world", teaching_style: "The Team Captain", username: "dallis", password: "1234", role: 'instructor')
+
+  danielle = Instructor.create(name: "Danielle Vetrano", hometown: "New York, New York", fun_fact: "I've been a personal trainer for 8 years", teaching_style: "The Powerhouse", username: "danielle", password: "1234", role: 'instructor')
+
+  james = Instructor.create(name: "James Beggan", hometown: "Boston, MA", fun_fact: "Outside the studio, I'm an artist and a DJ", teaching_style: "The Entertainer", username: "james", password: "1234", role: 'instructor')
+
+  angela = Instructor.create(name: "Angela Rice", hometown: "New York, NY", fun_fact: "I love the outdoors", teaching_style: "The Rebel", username: "angela", password: "1234", role: 'instructor')
+
+  #SWERVE INSTRUCTORS
+  jason = Instructor.create(name: "Jason Tran", hometown: "Brooklyn, OH", fun_fact: "I'm OBSESSED with music", teaching_style: "The Entertainer", username: "jason", password: "1234", role: 'instructor')
+
+  jamey = Instructor.create(name: "Jamey Powell", hometown: "St. Louis, MO", fun_fact: "I'm super into musical theater", teaching_style: "The Team Captain", username: "jamey", password: "1234", role: 'instructor')
+
+  simon = Instructor.create(name: "Simon Lawson", hometown: "New York, NY", fun_fact: "I'm super competative... wanna race?", teaching_style: "The Rebel", username: "simon", password: "1234", role: 'instructor')
+
+  coleman = Instructor.create(name: "Coleman Annison", hometown: "Jackson, MO", fun_fact: "I'm an actor and have done a lot of TV and film work.", teaching_style: "The Entertainer", username: "coletheman", password: "1234", role: 'instructor')
+
+  jenna = Instructor.create(name: "Jenna Arndt", hometown: "Houston, TX", fun_fact: "I love the feeling of working hard and achieving your goals", teaching_style: "The Powerhouse", username: "jennaaa", password: "1234", role: 'instructor')
+
+  dyan = Instructor.create(name: "Dyan Tsiumis", hometown: "Needham, MA", fun_fact: "I've been working in the fitness industry for over 10 years!", teaching_style: "The Rebel", username: "dyant", password: "1234", role: 'instructor')
+
+  #SYNC INSTRUCTORS
+  karim = Instructor.create(name: "Karim Esmail", hometown: "Brooklyn, NY", fun_fact: "I'm a DJ and Music producer in my free time", teaching_style: "The Powerhouse", username: "karim", password: "1234", role: 'instructor')
+
+  karla = Instructor.create(name: "Karla Misjan", hometown: "Brooklyn, NY", fun_fact: "Mom of three!", teaching_style: "The Team Captain", username: "karlam", password: "1234", role: 'instructor')
+
+  javi = Instructor.create(name: "Javi Hernandez", hometown: "Brooklyn, NY", fun_fact: "I'm from Venezuala", teaching_style: "The Rebel", username: "javihernan", password: "1234", role: 'instructor')
+
+  ashley = Instructor.create(name: "Ashley Lively", hometown: "Brooklyn, NY", fun_fact: "I'm the co-founder and creater of Sync Cycling", teaching_style: "The Powerhouse", username: "ashleylives", password: "1234", role: 'instructor')
+
+  #AQUA INSTRUCTORS
+  tzipora = Instructor.create(name: "Tzipora Montaine", hometown: "Brooklyn, NY", fun_fact: "I have a passion for fitness and Chemistry", teaching_style: "The Team Captain", username: "tmontaine", password: "1234", role: 'instructor')
+
+  ed = Instructor.create(name: "Ed Hall Jr.", hometown: "New York, NY", fun_fact: "I started a non-profit organization with my family called The Marie Georges Foundation", teaching_style: "The Entertainer", username: "edhall", password: "1234", role: 'instructor')
+
+  kalli = Instructor.create(name: "Kalli Saphos", hometown: "Los Angeles, CA", fun_fact: "I love to surf", teaching_style: "The Powerhouse", username: "kallis", password: "1234", role: 'instructor')
+
+  jc = Instructor.create(name: "JC Durimel", hometown: "Paris, France", fun_fact: "I was raised in Paris and moved to America to live the American Dream", teaching_style: "The Entertainer", username: "jcdurim", password: "1234", role: 'instructor')
+
+  moses = Instructor.create(name: "Moses Daniel", hometown: "Brooklyn, NY", fun_fact: "I'm driven by the beat", teaching_style: "The Rebel", username: "moses", password: "1234", role: 'instructor')
 
   #Location
   #FLYWHEEL LOCATIONS
@@ -224,7 +284,7 @@ aqua = Studio.create(name: "Aqua Studio", logo: "../assets/aqua.png", bio: "The 
 
   SpinClass.create(studio_id: 2, instructor_id: laurie.id, location_id: 18, time: "60 MINUTE POWER HOUR", start: "201904141430EST", end: "201904141530EST")
 
-  SpinClass.create(studio_id: 2, instructor_id: laurie.id, location_id: 18, time: "60 MINUTE POWER HOUR", start: "201904161430EST", end: "201904161530EST")
+  SpinClass.create(studio_id: 2, instructor_id: laurie.id, location_id: 18, time: "60 MINUTE POWER HOUR", start: "201904161830EST", end: "201904161930EST")
 
   SpinClass.create(studio_id: 2, instructor_id: josh.id, location_id: 19, time: "KANYE THEME RIDE", start: "201904201430EST", end: "201904201530EST")
 
@@ -265,6 +325,66 @@ aqua = Studio.create(name: "Aqua Studio", logo: "../assets/aqua.png", bio: "The 
 
   SpinClass.create(studio_id: 5, instructor_id: aaron.id, location_id: 36, time: "45 MINUTE POWER RIDE", start: "201904191000EST", end: "201904191045EST")
 
+  SpinClass.create(studio_id: 5, instructor_id: ari.id, location_id: 36, time: "45 MINUTE POWER RIDE", start: "201904191330EST", end: "201904191415EST")
+
+  SpinClass.create(studio_id: 5, instructor_id: aaron.id, location_id: 36, time: "45 MINUTE POWER RIDE", start: "201904171030EST", end: "201904171145EST")
+
+  #RYDE CLASSES
+  SpinClass.create(studio_id: 6, instructor_id: angela.id, location_id: 38, time: "45 MINUTE POWER RIDE", start: "201904160630EST", end: "201904160715EST")
+
+  SpinClass.create(studio_id: 6, instructor_id: james.id, location_id: 38, time: "POWER HOUR RIDE", start: "201904170930EST", end: "201904171030EST")
+
+  SpinClass.create(studio_id: 6, instructor_id: james.id, location_id: 38, time: "POWER HOUR RIDE", start: "201904191100EST", end: "201904191200EST")
+
+  SpinClass.create(studio_id: 6, instructor_id: danielle.id, location_id: 38, time: "BLAST FROM THE PAST RIDE", start: "201904191700EST", end: "201904191745EST")
+
+  SpinClass.create(studio_id: 6, instructor_id: dallis.id, location_id: 38, time: "45 MINUTE POWER RIDE", start: "201904151500EST", end: "201904151545EST")
+
+  SpinClass.create(studio_id: 6, instructor_id: dallis.id, location_id: 38, time: "45 MINUTE POWER RIDE", start: "201904181300EST", end: "201904181345EST")
+
+  #SWERVE CLASSES
+  SpinClass.create(studio_id: 7, instructor_id: jamey.id, location_id: 39, time: "45 MINUTE POWER RIDE", start: "201904140730EST", end: "201904140815EST")
+
+  SpinClass.create(studio_id: 7, instructor_id: simon.id, location_id: 40, time: "NO SUNDAY SCARIES RIDE", start: "201904141330EST", end: "201904141430EST")
+
+  SpinClass.create(studio_id: 7, instructor_id: coleman.id, location_id: 40, time: "POWER HOUR RIDE", start: "201904161330EST", end: "201904161430EST")
+
+  SpinClass.create(studio_id: 7, instructor_id: jenna.id, location_id: 39, time: "POWER HOUR RIDE", start: "201904171330EST", end: "201904171430EST")
+
+  SpinClass.create(studio_id: 7, instructor_id: dyan.id, location_id: 40, time: "RISE AND GRIND RIDE", start: "201904180530EST", end: "201904180615EST")
+
+  SpinClass.create(studio_id: 7, instructor_id: simon.id, location_id: 41, time: "RISE AND GRIND RIDE", start: "201904200530EST", end: "201904200615EST")
+
+  SpinClass.create(studio_id: 7, instructor_id: coleman.id, location_id: 41, time: "FRIDAY NIGHT RIDE", start: "201904191830EST", end: "201904191915EST")
+
+
+  #SYNC CLASSES
+  SpinClass.create(studio_id: 8, instructor_id: karim.id, location_id: 42, time: "45 MINUTE POWER RIDE", start: "201904140930EST", end: "201904141015EST")
+
+  SpinClass.create(studio_id: 8, instructor_id: karla.id, location_id: 42, time: "ARIANA GRANDE THEME RIDE", start: "201904151630EST", end: "201904151715EST")
+
+  SpinClass.create(studio_id: 8, instructor_id: javi.id, location_id: 42, time: "#HILLS_FOR_DAYS RIDE", start: "201904160930EST", end: "201904161015EST")
+
+  SpinClass.create(studio_id: 8, instructor_id: ashley.id, location_id: 42, time: "POWER HOUR RIDE", start: "201904171830EST", end: "201904171930EST")
+
+  SpinClass.create(studio_id: 8, instructor_id: ashley.id, location_id: 42, time: "POWER HOUR RIDE", start: "201904181830EST", end: "201904181930EST")
+
+  SpinClass.create(studio_id: 8, instructor_id: javi.id, location_id: 42, time: "#HILLS_FOR_DAYS RIDE", start: "201904190530EST", end: "201904190615EST")
+
+  #AQUA CLASSES
+  SpinClass.create(studio_id: 9, instructor_id: tzipora.id, location_id: 43, time: "AQUA RIDE 45", start: "201904141230EST", end: "201904141315EST")
+
+  SpinClass.create(studio_id: 9, instructor_id: ed.id, location_id: 43, time: "AQUA RIDE 60", start: "201904141830EST", end: "201904141915EST")
+
+  SpinClass.create(studio_id: 9, instructor_id: jc.id, location_id: 43, time: "AQUA RIDE 45", start: "201904150530EST", end: "201904150615EST")
+
+  SpinClass.create(studio_id: 9, instructor_id: moses.id, location_id: 43, time: "AQUA RIDE 45", start: "201904161630EST", end: "201904161715EST")
+
+  SpinClass.create(studio_id: 9, instructor_id: kalli.id, location_id: 43, time: "AQUA RIDE 45", start: "201904180930EST", end: "201904181015EST")
+
+  SpinClass.create(studio_id: 9, instructor_id: tzipora.id, location_id: 43, time: "AQUA RIDE 60", start: "201904181345EST", end: "201904181445EST")
+
+  SpinClass.create(studio_id: 9, instructor_id: ed.id, location_id: 43, time: "AQUA RIDE 60", start: "201904201330EST", end: "201904201430EST")
 #UserClasses
 # UserClass.create(user_id: 1, spin_class_id: 1)
 

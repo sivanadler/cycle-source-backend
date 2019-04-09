@@ -32,7 +32,8 @@ class ApplicationController < ActionController::API
 
  def curr_user
    user_id = decode_token[0]["user_id"]
-   User.find(user_id)
+   user = User.find(user_id)
+   UserSerializer.new(user)
    # who is the current user maybe we don't need to authorize the route but it might be nice to know
    # who the user is to see whether or not they can validly access something
  end
