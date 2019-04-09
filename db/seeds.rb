@@ -20,37 +20,71 @@ soulcycle = Studio.create(name: "SoulCycle", logo: '../assets/soulcycle.png', bi
 
 peleton = Studio.create(name: "Peleton", logo: "../assets/peleton.png", bio: "Access high-energy workouts, instantly. Discover Peloton: streaming fitness classes to you live and on-demand.", website: "https://www.onepeloton.com/", color: '#ff598d')
 
-crank = Studio.create(name: "Crank NYC", logo: "../assets/crank.png", bio: "BUILT ON LOVE, SWEAT, SUPPORT.", website: "https://www.cranknyc.com/", color: '#fc0707')
+crank = Studio.create(name: "Crank", logo: "../assets/crank.png", bio: "BUILT ON LOVE, SWEAT, SUPPORT.", website: "https://www.cranknyc.com/", color: '#e55757')
 
-cyc = Studio.create(name: "Cyc Fitness", logo: "../assets/cyc.jpg", bio: "CYC IS THE MUSIC-DRIVEN, HIGH-ENERGY INDOOR CYCLING EXPERIENCE DESIGNED TO WORK YOUR BODY AND MIND.", website: "https://cycfitness.com/", color: '#36b577')
+cyc = Studio.create(name: "Cyc Fitness", logo: "../assets/cyc.jpg", bio: "CYC IS THE MUSIC-DRIVEN, HIGH-ENERGY INDOOR CYCLING EXPERIENCE DESIGNED TO WORK YOUR BODY AND MIND.", website: "https://cycfitness.com/", color: '#4ac489')
 
-ryde = Studio.create(name: "Revolve Fitness", logo: "../assets/revolve.jpg", bio: "RYDE Cycle's classes are designed to challenge the fiercest competitors -- and introduce novice riders to a whole new way to sweat! We're proud to offer expert-crafted workouts to help our riders reach their fitness goals with the support of our inclusive community.", website: "http://www.revolvefitness.com/", color: '#bb8ef2')
+ryde = Studio.create(name: "Ryde Fitness", logo: "../assets/revolve.jpg", bio: "RYDE Cycle's classes are designed to challenge the fiercest competitors -- and introduce novice riders to a whole new way to sweat! We're proud to offer expert-crafted workouts to help our riders reach their fitness goals with the support of our inclusive community.", website: "http://www.revolvefitness.com/", color: '#bb8ef2')
 
 swerve = Studio.create(name: "Swerve Fitness", logo: "../assets/swerve.png", bio: "SWERVE cycling studios are located in Midtown & Flatiron of NYC. The world's first team inspired indoor cycling studio. Book a bike and join us for a ride.", website: "https://www.swervefitness.com/", color: '#a0d8d5')
 
 sync = Studio.create(name: "Sync Studio", logo: "../assets/sync.jpg", bio: "SYNCSTUDIO is a lifestyle studio which offers a variety of group exercise classes, personal training and events to help every individual reach their personal best", website: "http://www.syncstudio.net/brooklyn/", color: '#efb326')
 
-aqua = Studio.create(name: "Aqua Studio NY", logo: "../assets/aqua.png", bio: "The tri-level boutique studio in the heart of TriBeCa offers you the best of high performance fitness with the ambiance of modern wellness.", website: "https://www.aquastudiony.com/", color: '#70edef')
+aqua = Studio.create(name: "Aqua Studio", logo: "../assets/aqua.png", bio: "The tri-level boutique studio in the heart of TriBeCa offers you the best of high performance fitness with the ambiance of modern wellness.", website: "https://www.aquastudiony.com/", color: '#70edef')
 
 #Instructors
-emily = Instructor.create(name: "Emily Fayette", hometown: "Rochester, New York", fun_fact: "I'm training for a marathon", teaching_style: "The Team Captain", username: "healthyhustle", password: "1234", role: 'instructor')
+  #FLYWHEEL INSTRUCTORS
+  emily = Instructor.create(name: "Emily Fayette", hometown: "Rochester, New York", fun_fact: "I'm training for a marathon", teaching_style: "The Team Captain", username: "healthyhustle", password: "1234", role: 'instructor')
 
-maya = Instructor.create(name: "Maya Elias", hometown: "New York, New York", fun_fact: "I've been spinning for 10 years", teaching_style: "The Entertainer", username: "melias101", password: "1234", role: 'instructor')
+  mario = Instructor.create(name: "Mario Martinez", hometown: "New York, New York", fun_fact: "I change my hair color every month", teaching_style: "The Visionary", username: "mmartinez", password: "1234", role: 'instructor')
 
-mario = Instructor.create(name: "Mario Martinez", hometown: "New York, New York", fun_fact: "I change my hair color every month", teaching_style: "The Visionary", username: "mmartinez", password: "1234", role: 'instructor')
+  alison = Instructor.create(name: "Alison Cohen", hometown: "Great Neck, New York", fun_fact: "I attended graduate school at NYU for clinical nutrition while teaching group fitness classes around NYC.", teaching_style: "The Rebel", username: "acohen101", password: "1234", role: 'instructor')
 
-alison = Instructor.create(name: "Alison Cohen", hometown: "Great Neck, New York", fun_fact: "I attended graduate school at NYU for clinical nutrition while teaching group fitness classes around NYC.", teaching_style: "The Rebel", username: "acohen101", password: "1234", role: 'instructor')
+  cedric = Instructor.create(name: "Cedric Green", hometown: "New York, New York", fun_fact: "I love running marathons", teaching_style: "The Entertainer", username: "cgreen", password: "1234", role: 'instructor')
 
-cedric = Instructor.create(name: "Cedric Green", hometown: "New York, New York", fun_fact: "I love running marathons", teaching_style: "The Entertainer", username: "cgreen", password: "1234", role: 'instructor')
+  caitlin = Instructor.create(name: "Caitlin Jones", hometown: "New York, New York", fun_fact: "I used to be an NBA dancer", teaching_style: "The Visionary", username: "caitlinjones", password: "1234", role: 'instructor')
 
-caitlin = Instructor.create(name: "Caitlin Jones", hometown: "New York, New York", fun_fact: "I used to be an NBA dancer", teaching_style: "The Visionary", username: "caitlinjones", password: "1234", role: 'instructor')
+  jared = Instructor.create(name: "Jared Poulin", hometown: "New York, New York", fun_fact: "I'm OBSESSED with music", teaching_style: "The Team Captain", username: "jpoulin", password: "1234", role: 'instructor')
 
-jared = Instructor.create(name: "Jared Poulin", hometown: "New York, New York", fun_fact: "I'm OBSESSED with music", teaching_style: "The Team Captain", username: "jpoulin", password: "1234", role: 'instructor')
+  justin = Instructor.create(name: "Justin Flexen", hometown: "New York, New York", fun_fact: "I'm always down for a good EDM beat drop", teaching_style: "The Rebel", username: "jflex", password: "1234", role: 'instructor')
 
-justin = Instructor.create(name: "Justin Flexen", hometown: "New York, New York", fun_fact: "I'm always down for a good EDM beat drop", teaching_style: "The Rebel", username: "jflex", password: "1234", role: 'instructor')
+  #SOULCYCLE INSTRUCTORS
+  maya = Instructor.create(name: "Maya Elias", hometown: "New York, New York", fun_fact: "I've been spinning for 10 years", teaching_style: "The Entertainer", username: "melias101", password: "1234", role: 'instructor')
 
+  claire = Instructor.create(name: "Claire Jones", hometown: "Brooklyn, New York", fun_fact: "I've been a dancer since age 9", teaching_style: "The Team Captain", username: "cjones", password: "1234", role: 'instructor')
 
-#Location
+  josh = Instructor.create(name: "Joshua Fried", hometown: "New York, New York", fun_fact: "I'm an artist!", teaching_style: "The Visionary", username: "jfried", password: "1234", role: 'instructor')
+
+  laurie = Instructor.create(name: "Laurie Anderson", hometown: "Los Angeles, CA", fun_fact: "I've appeared in a variety of magazine ads, movies and tv shows", teaching_style: "The Rebel", username: "laurie", password: "1234", role: 'instructor')
+
+  eddie = Instructor.create(name: "Eddie Williams", hometown: "Atlanta, GA", fun_fact: "I'm a professional dancer in NYC", teaching_style: "The Team Captain", username: "eddie", password: "1234", role: 'instructor')
+
+  #PELETON INSTRUCTORS
+  alex = Instructor.create(name: "Alex Toussaint", hometown: "New York, NY", fun_fact: "I was in the military for 5 years", teaching_style: "The Rebel", username: "alex", password: "1234", role: 'instructor')
+
+  ally = Instructor.create(name: "Ally Love", hometown: "New York, NY", fun_fact: "I'm a certified health coach and the founder of a fitness lifestyle brand called Love Squad", teaching_style: "The Entertainer", username: "ally", password: "1234", role: 'instructor')
+
+  ben = Instructor.create(name: "Ben Alldis", hometown: "New York, NY", fun_fact: "I work in finance when I'm not hitting the bike", teaching_style: "The Team Captain", username: "ben", password: "1234", role: 'instructor')
+
+  cody = Instructor.create(name: "Cody Rigsby", hometown: "New York, NY", fun_fact: "I like to travel and explore the world", teaching_style: "The Entertainer", username: "cody", password: "1234", role: 'instructor')
+
+  hannah = Instructor.create(name: "Hannah Corbin", hometown: "Portland, OR", fun_fact: "I LOVE to dance!", teaching_style: "The Rebel", username: "hannah", password: "1234", role: 'instructor')
+
+  #CRANK INSTRUCTORS
+  annette = Instructor.create(name: "Annette Gold", hometown: "Brooklyn, New York", fun_fact: "I'm obsessed with working out", teaching_style: "The Powerhouse", username: "annette", password: "1234", role: 'instructor')
+
+  jay = Instructor.create(name: "Jay Stern", hometown: "New York, New York", fun_fact: "I love my cats", teaching_style: "The Entertainer", username: "jay", password: "1234", role: 'instructor')
+
+  yesenia = Instructor.create(name: "Yesenia Morgan", hometown: "New York, New York", fun_fact: "I love the warm weather!", teaching_style: "The Rebel", username: "yesenia", password: "1234", role: 'instructor')
+
+  #CYC INSTRUCTORS
+  ari = Instructor.create(name: "Ari Olivo", hometown: "New York, New York", fun_fact: "I'm a pizza addict...", teaching_style: "The Entertainer", username: "ari", password: "1234", role: 'instructor')
+
+  aaron = Instructor.create(name: "Aaron Albert", hometown: "New York, New York", fun_fact: "My go to cocktail is a dirty gin martini", teaching_style: "The Team Captain", username: "aaron", password: "1234", role: 'instructor')
+
+  elena = Instructor.create(name: "Elena Koshivaki", hometown: "New York, New York", fun_fact: "I'm a kombucha lover", teaching_style: "The Rebel", username: "elena", password: "1234", role: 'instructor')
+
+  #Location
   #FLYWHEEL LOCATIONS
     Location.create(studio_id: 1, name: "Upper East Side", address: "201 East 67th Street 3rd Floor New York, NY 10065", phone_number: "(212) 327-1217", email: "ues@flywheelsports.com")
 
@@ -148,15 +182,88 @@ justin = Instructor.create(name: "Justin Flexen", hometown: "New York, New York"
 
 
 #SpinClasses
-SpinClass.create(studio_id: 1, instructor_id: emily.id, location_id: 1, time: "45 MINUTE POWER RIDE", start: "201904150830EST", end: "201904150915EST")
+  #FLYWHEEL CLASSES
+  SpinClass.create(studio_id: 1, instructor_id: caitlin.id, location_id: 1, time: "BEYONCE THEME RIDE", start: "201904151730EST", end: "201904151815EST")
 
-SpinClass.create(studio_id: 1, instructor_id: emily.id, location_id: 1, time: "60 MINUTE POWER HOUR", start: "201904151030EST", end: "201904151130EST")
+  SpinClass.create(studio_id: 1, instructor_id: cedric.id, location_id: 3, time: "#TBT RIDE", start: "201904181730EST", end: "201904181815EST")
 
-SpinClass.create(studio_id: 2, instructor_id: maya.id, location_id: 17, time: "60 MINUTE POWER HOUR", start: "201904140830EST", end: "201904140930EST")
+  SpinClass.create(studio_id: 1, instructor_id: jared.id, location_id: 5, time: "#FLASHBACK FRIDAY RIDE", start: "201904191230EST", end: "201904191315EST")
 
-SpinClass.create(studio_id: 1, instructor_id: mario.id, location_id: 3, time: "60 MINUTE POWER HOUR", start: "201904151230EST", end: "201904150130EST")
+  SpinClass.create(studio_id: 1, instructor_id: justin.id, location_id: 5, time: "90 MINUTE SUPER SPRINT", start: "201904161430EST", end: "201904161600EST")
 
-SpinClass.create(studio_id: 1, instructor_id: alison.id, location_id: 4, time: "45 MINUTE POWER RIDE", start: "201904141130EST", end: "201904141215EST")
+  SpinClass.create(studio_id: 1, instructor_id: emily.id, location_id: 1, time: "45 MINUTE POWER RIDE", start: "201904150830EST", end: "201904150915EST")
+
+  SpinClass.create(studio_id: 1, instructor_id: emily.id, location_id: 1, time: "45 MINUTE POWER RIDE", start: "201904170830EST", end: "201904170915EST")
+
+  SpinClass.create(studio_id: 1, instructor_id: emily.id, location_id: 1, time: "45 MINUTE POWER RIDE", start: "201904190830EST", end: "201904190915EST")
+
+  SpinClass.create(studio_id: 1, instructor_id: emily.id, location_id: 1, time: "60 MINUTE POWER HOUR", start: "201904161030EST", end: "201904161130EST")
+
+  SpinClass.create(studio_id: 1, instructor_id: mario.id, location_id: 3, time: "60 MINUTE POWER HOUR", start: "201904151230EST", end: "201904151330EST")
+
+  SpinClass.create(studio_id: 1, instructor_id: mario.id, location_id: 3, time: "60 MINUTE POWER HOUR", start: "201904171230EST", end: "201904171330EST")
+
+  SpinClass.create(studio_id: 1, instructor_id: alison.id, location_id: 4, time: "45 MINUTE POWER RIDE", start: "201904141130EST", end: "201904141215EST")
+
+  SpinClass.create(studio_id: 1, instructor_id: alison.id, location_id: 4, time: "45 MINUTE POWER RIDE", start: "201904161130EST", end: "201904161215EST")
+
+  SpinClass.create(studio_id: 1, instructor_id: alison.id, location_id: 4, time: "45 MINUTE POWER RIDE", start: "201904181130EST", end: "201904181215EST")
+
+  #SOULCYCLE CLASSES
+  SpinClass.create(studio_id: 2, instructor_id: maya.id, location_id: 17, time: "60 MINUTE POWER HOUR", start: "201904140830EST", end: "201904140930EST")
+
+  SpinClass.create(studio_id: 2, instructor_id: maya.id, location_id: 17, time: "60 MINUTE POWER HOUR", start: "201904160830EST", end: "201904160930EST")
+
+  SpinClass.create(studio_id: 2, instructor_id: maya.id, location_id: 17, time: "60 MINUTE POWER HOUR", start: "201904180830EST", end: "201904180930EST")
+
+  SpinClass.create(studio_id: 2, instructor_id: eddie.id, location_id: 16, time: "45 MINUTE POWER RIDE", start: "201904150630EST", end: "201904150715EST")
+
+  SpinClass.create(studio_id: 2, instructor_id: eddie.id, location_id: 16, time: "45 MINUTE POWER RIDE", start: "201904170630EST", end: "201904170715EST")
+
+  SpinClass.create(studio_id: 2, instructor_id: eddie.id, location_id: 16, time: "45 MINUTE POWER RIDE", start: "201904190630EST", end: "201904190715EST")
+
+  SpinClass.create(studio_id: 2, instructor_id: laurie.id, location_id: 18, time: "60 MINUTE POWER HOUR", start: "201904141430EST", end: "201904141530EST")
+
+  SpinClass.create(studio_id: 2, instructor_id: laurie.id, location_id: 18, time: "60 MINUTE POWER HOUR", start: "201904161430EST", end: "201904161530EST")
+
+  SpinClass.create(studio_id: 2, instructor_id: josh.id, location_id: 19, time: "KANYE THEME RIDE", start: "201904201430EST", end: "201904201530EST")
+
+  SpinClass.create(studio_id: 2, instructor_id: claire.id, location_id: 19, time: "45 MINUTE POWER RIDE", start: "201904200930EST", end: "201904201015EST")
+
+  #PELETON CLASSES
+  SpinClass.create(studio_id: 3, instructor_id: alex.id, location_id: 31, time: "60 MINUTE POWER HOUR", start: "201904160530EST", end: "201904160630EST")
+
+  SpinClass.create(studio_id: 3, instructor_id: alex.id, location_id: 31, time: "45 MINUTE POWER HOUR", start: "201904161930EST", end: "201904162015EST")
+
+  SpinClass.create(studio_id: 3, instructor_id: ally.id, location_id: 31, time: "45 MINUTE POWER HOUR", start: "201904141730EST", end: "201904141815EST")
+
+  SpinClass.create(studio_id: 3, instructor_id: ben.id, location_id: 31, time: "CARDI B VS. NICKI MINAJ RIDE", start: "201904171730EST", end: "201904171830EST")
+
+  SpinClass.create(studio_id: 3, instructor_id: cody.id, location_id: 31, time: "THROWBACK THURSDAY RIDE", start: "201904171530EST", end: "201904171630EST")
+
+  SpinClass.create(studio_id: 3, instructor_id: hannah.id, location_id: 31, time: "60 MINUTE POWER RIDE", start: "201904191530EST", end: "201904191630EST")
+
+  SpinClass.create(studio_id: 3, instructor_id: hannah.id, location_id: 31, time: "60 MINUTE POWER RIDE", start: "201904200800EST", end: "201904200900EST")
+
+  #CRANK CLASSES
+  SpinClass.create(studio_id: 4, instructor_id: cedric.id, location_id: 32, time: "60 MINUTE POWER RIDE", start: "201904140600EST", end: "201904140700EST")
+
+  SpinClass.create(studio_id: 4, instructor_id: yesenia.id, location_id: 32, time: "45 MINUTE POWER RIDE", start: "201904151400EST", end: "201904151500EST")
+
+  SpinClass.create(studio_id: 4, instructor_id: jay.id, location_id: 33, time: "45 MINUTE POWER RIDE", start: "201904170530EST", end: "201904170615EST")
+
+  SpinClass.create(studio_id: 4, instructor_id: annette.id, location_id: 33, time: "60 MINUTE POWER RIDE", start: "201904181530EST", end: "201904181630EST")
+
+  #CYC CLASSES
+  SpinClass.create(studio_id: 5, instructor_id: elena.id, location_id: 34, time: "60 MINUTE POWER RIDE", start: "201904151030EST", end: "201904151130EST")
+
+  SpinClass.create(studio_id: 5, instructor_id: ari.id, location_id: 35, time: "45 MINUTE POWER RIDE", start: "201904180630EST", end: "201904180715EST")
+
+  SpinClass.create(studio_id: 5, instructor_id: ari.id, location_id: 35, time: "60 MINUTE POWER SPRINT", start: "201904151900EST", end: "201904152000EST")
+
+  SpinClass.create(studio_id: 5, instructor_id: aaron.id, location_id: 35, time: "45 MINUTE POWER RIDE", start: "201904201200EST", end: "201904201300EST")
+
+  SpinClass.create(studio_id: 5, instructor_id: aaron.id, location_id: 36, time: "45 MINUTE POWER RIDE", start: "201904191000EST", end: "201904191045EST")
 
 #UserClasses
 # UserClass.create(user_id: 1, spin_class_id: 1)

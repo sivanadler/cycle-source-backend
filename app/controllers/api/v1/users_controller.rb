@@ -2,7 +2,7 @@ class Api::V1::UsersController < ApplicationController
 
   def index
     @users = User.all
-    render json: @users, :inclide => :favorites
+    render json: @users
   end
 
   def show
@@ -12,7 +12,9 @@ class Api::V1::UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
+    byebug
     if @user.save
+      byebug
       jwt = encode_token({user_id: @user.id})
       render json: {user: UserSerializer.new(@user), jwt: jwt}
     else
