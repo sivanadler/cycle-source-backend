@@ -11,6 +11,7 @@ Rails.application.routes.draw do
       resources :sessions
       resources :reviews
       resources :favorites
+      resources :instructor_reviews
 
       # route to login
 			post "/login", to: "auth#login"
