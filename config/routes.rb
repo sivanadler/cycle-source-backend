@@ -12,7 +12,7 @@ Rails.application.routes.draw do
       resources :reviews
       resources :favorites
       resources :instructor_reviews
-
+      post '/send_text' => 'texts#send_text'
       # route to login
 			post "/login", to: "auth#login"
 

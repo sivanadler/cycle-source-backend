@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_10_143302) do
+ActiveRecord::Schema.define(version: 2019_04_11_144104) do
 
   create_table "accounts", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -65,6 +65,7 @@ ActiveRecord::Schema.define(version: 2019_04_10_143302) do
     t.string "role"
     t.string "username"
     t.string "password_digest"
+    t.string "profile_pic"
   end
 
   create_table "locations", force: :cascade do |t|
@@ -106,6 +107,12 @@ ActiveRecord::Schema.define(version: 2019_04_10_143302) do
     t.string "bio"
     t.string "website"
     t.string "color"
+  end
+
+  create_table "texts", force: :cascade do |t|
+    t.string "message"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "user_classes", force: :cascade do |t|

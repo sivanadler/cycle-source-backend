@@ -3,4 +3,8 @@ class Location < ApplicationRecord
   has_many :instructors, through: :spin_classes
 
   belongs_to :studio
+
+  def test
+    byebug
+  end
 end
