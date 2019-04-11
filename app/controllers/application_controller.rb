@@ -39,8 +39,9 @@ class ApplicationController < ActionController::API
  end
 
  def curr_instructor
-   instructor_id = decode_token[0]["user_id"]
-   Instructor.find(instructor_id)
+   instructor_id = decode_token[0]["instructor_id"]
+   instructor = Instructor.find(instructor_id)
+   InstructorSerializer.new(instructor)
    # who is the current user maybe we don't need to authorize the route but it might be nice to know
    # who the user is to see whether or not they can validly access something
  end
