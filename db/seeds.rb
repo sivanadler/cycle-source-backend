@@ -16,17 +16,17 @@ url = 'db/assets/sivan.jpg'
 #Studios
 flywheel = Studio.create(name: "FlyWheel Sports", logo: 'https://blog.flywheelsports.com/wp-content/themes/salient/img/flywheel-button.png', bio: "Flywheel offers in studio and on-demand indoor cycling, strengthening, and recovery classes.", website: "https://www.flywheelsports.com/", color: '#93b5ed')
 
-soulcycle = Studio.create(name: "SoulCycle", logo: "https://www.myface.org/wp-content/uploads/2017/01/soulcycle-logo.png", bio: "SoulCycle has revolutionized indoor cycling and taken the world of fitness by storm. 45 minutes to take your journey. Change your body. Find your SOUL.", website: "https://www.soul-cycle.com/" , color: '#fff959')
+soulcycle = Studio.create(name: "SoulCycle", logo: "https://s3.amazonaws.com/tdr-production/rectangle_images/files/000/193/994/original/logo-soul-cycle.jpg?1473212129", bio: "SoulCycle has revolutionized indoor cycling and taken the world of fitness by storm. 45 minutes to take your journey. Change your body. Find your SOUL.", website: "https://www.soul-cycle.com/" , color: '#fff959')
 
 peleton = Studio.create(name: "Peleton", logo: "https://www.welltodoglobal.com/wp-content/uploads/2018/06/Peloton-logo-1.png", bio: "Access high-energy workouts, instantly. Discover Peloton: streaming fitness classes to you live and on-demand.", website: "https://www.onepeloton.com/", color: '#ff598d')
 
-crank = Studio.create(name: "Crank", logo: "https://pbs.twimg.com/profile_images/749212798698356736/fA_ZnPmV_400x400.jpg", bio: "BUILT ON LOVE, SWEAT, SUPPORT.", website: "https://www.cranknyc.com/", color: '#e55757')
+crank = Studio.create(name: "Crank", logo: "http://www.internationalrobot.net/images/crank.jpg", bio: "BUILT ON LOVE, SWEAT, SUPPORT.", website: "https://www.cranknyc.com/", color: '#e55757')
 
 cyc = Studio.create(name: "Cyc Fitness", logo: "https://image4.owler.com/logo/cyc-fitness_owler_20160227_150732_original.jpg", bio: "CYC IS THE MUSIC-DRIVEN, HIGH-ENERGY INDOOR CYCLING EXPERIENCE DESIGNED TO WORK YOUR BODY AND MIND.", website: "https://cycfitness.com/", color: '#4ac489')
 
 ryde = Studio.create(name: "Ryde Fitness", logo: "http://www.revolvefitness.com/resourcefiles/spnav/spnav-rydebanner.jpg", bio: "RYDE Cycle's classes are designed to challenge the fiercest competitors -- and introduce novice riders to a whole new way to sweat! We're proud to offer expert-crafted workouts to help our riders reach their fitness goals with the support of our inclusive community.", website: "http://www.revolvefitness.com/", color: '#bb8ef2')
 
-swerve = Studio.create(name: "Swerve Fitness", logo: "https://media.licdn.com/dms/image/C4D0BAQHbDyMVkIM1sg/company-logo_200_200/0?e=2159024400&v=beta&t=KZXNaSYfR7oS3Dbz63IlfrqC5qcE6VciJV5bfc2ZCbU", bio: "SWERVE cycling studios are located in Midtown & Flatiron of NYC. The world's first team inspired indoor cycling studio. Book a bike and join us for a ride.", website: "https://www.swervefitness.com/", color: '#a0d8d5')
+swerve = Studio.create(name: "Swerve Fitness", logo: "http://static1.squarespace.com/static/59cc0b762994ca4a88b53726/59d44927e5dd5b4e5b9cad0b/59d449dc9f74568e5f57dc93/1519141250392/swerve-fitness.png?format=1500w", bio: "SWERVE cycling studios are located in Midtown & Flatiron of NYC. The world's first team inspired indoor cycling studio. Book a bike and join us for a ride.", website: "https://www.swervefitness.com/", color: '#a0d8d5')
 
 sync = Studio.create(name: "Sync Studio", logo: "http://shopdurhamnc.com/wp-content/uploads/job-manager-uploads/job_logo/2017/11/sync-studio-gym-review-.jpg", bio: "SYNCSTUDIO is a lifestyle studio which offers a variety of group exercise classes, personal training and events to help every individual reach their personal best", website: "http://www.syncstudio.net/brooklyn/", color: '#efb326')
 
@@ -49,7 +49,7 @@ aqua = Studio.create(name: "Aqua Studio", logo: "https://botw-pd.s3.amazonaws.co
   justin = Instructor.create(name: "Justin Flexen", hometown: "New York, New York", fun_fact: "I'm always down for a good EDM beat drop", teaching_style: "The Rebel", username: "jflex", password: "1234", role: 'instructor', profile_pic: "https://instructors.flywheelsports.com/510/Justin_Flexen_34b10a5520e018996bac20859339dbf41667265e.jpg")
 
   #SOULCYCLE INSTRUCTORS
-  maya = Instructor.create(name: "Maya Elias", hometown: "New York, New York", fun_fact: "I've been spinning for 10 years", teaching_style: "The Entertainer", username: "melias101", password: "1234", role: 'instructor', profile_pic: "https://77861ea9472dc18d4219-eac685bd65ad1e27603f37681401f52f.ssl.cf2.rackcdn.com/maya-profile.png")
+  maya = Instructor.create(name: "Maya Elias", hometown: "New York, New York", fun_fact: "I've been spinning for 10 years", teaching_style: "The Entertainer", username: "melias101", password: "1234", role: 'instructor', profile_pic: "https://77861ea9472dc18d4219-eac685bd65ad1e27603f37681401f52f.ssl.cf2.rackcdn.com/maya-small.png")
 
   claire = Instructor.create(name: "Claire Jones", hometown: "Brooklyn, New York", fun_fact: "I've been a dancer since age 9", teaching_style: "The Team Captain", username: "cjones", password: "1234", role: 'instructor', profile_pic: "https://77861ea9472dc18d4219-eac685bd65ad1e27603f37681401f52f.ssl.cf2.rackcdn.com/1545149965_Claire_Profile.jpg")
 
@@ -368,7 +368,8 @@ aqua = Studio.create(name: "Aqua Studio", logo: "https://botw-pd.s3.amazonaws.co
 
   SpinClass.create(studio_id: 9, instructor_id: ed.id, location_id: 43, time: "AQUA RIDE 60", start: "201904201330EST", end: "201904201430EST")
 #UserClasses
-# UserClass.create(user_id: 1, spin_class_id: 1)
+
+UserClass.create(user_id: 1, spin_class_id: 1, bike: 1)
 
 
 
