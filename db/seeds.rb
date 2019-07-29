@@ -12,7 +12,6 @@ url = 'db/assets/sivan.jpg'
 
 #Users
 
-
 #Studios
 flywheel = Studio.create(name: "FlyWheel Sports", logo: 'https://blog.flywheelsports.com/wp-content/themes/salient/img/flywheel-button.png', bio: "Flywheel offers in studio and on-demand indoor cycling, strengthening, and recovery classes.", website: "https://www.flywheelsports.com/", color: '#93b5ed')
 
@@ -372,6 +371,150 @@ aqua = Studio.create(name: "Aqua Studio", logo: "https://botw-pd.s3.amazonaws.co
 UserClass.create(user_id: 1, spin_class_id: 1, bike: 1)
 
 
+#SpinClasses
+  #FLYWHEEL CLASSES
+  SpinClass.create(studio_id: 1, instructor_id: caitlin.id, location_id: 1, time: "BEYONCE THEME RIDE", start: "201907291730EST", end: "201907291815EST")
+
+  SpinClass.create(studio_id: 1, instructor_id: cedric.id, location_id: 3, time: "#TBT RIDE", start: "201908011730EST", end: "201908011815EST")
+
+  SpinClass.create(studio_id: 1, instructor_id: jared.id, location_id: 5, time: "#FLASHBACK FRIDAY RIDE", start: "201908021230EST", end: "201908021315EST")
+
+  SpinClass.create(studio_id: 1, instructor_id: justin.id, location_id: 5, time: "90 MINUTE SUPER SPRINT", start: "201907301430EST", end: "201907301600EST")
+
+  SpinClass.create(studio_id: 1, instructor_id: emily.id, location_id: 1, time: "45 MINUTE POWER RIDE", start: "201907290830EST", end: "201907290915EST")
+
+  SpinClass.create(studio_id: 1, instructor_id: emily.id, location_id: 1, time: "45 MINUTE POWER RIDE", start: "201907310830EST", end: "201907310915EST")
+
+  SpinClass.create(studio_id: 1, instructor_id: emily.id, location_id: 1, time: "45 MINUTE POWER RIDE", start: "201908020830EST", end: "201908020915EST")
+
+  SpinClass.create(studio_id: 1, instructor_id: emily.id, location_id: 1, time: "60 MINUTE POWER HOUR", start: "201907301030EST", end: "201907301130EST")
+
+  SpinClass.create(studio_id: 1, instructor_id: nowani.id, location_id: 3, time: "60 MINUTE POWER HOUR", start: "201907291230EST", end: "201907291330EST")
+
+  SpinClass.create(studio_id: 1, instructor_id: nowani.id, location_id: 3, time: "60 MINUTE POWER HOUR", start: "201907311230EST", end: "201907311330EST")
+
+  SpinClass.create(studio_id: 1, instructor_id: alison.id, location_id: 4, time: "45 MINUTE POWER RIDE", start: "201907281130EST", end: "201907281215EST")
+
+  SpinClass.create(studio_id: 1, instructor_id: alison.id, location_id: 4, time: "45 MINUTE POWER RIDE", start: "201907311130EST", end: "201907311215EST")
+
+  SpinClass.create(studio_id: 1, instructor_id: alison.id, location_id: 4, time: "45 MINUTE POWER RIDE", start: "201908011130EST", end: "201908011215EST")
+
+  #SOULCYCLE CLASSES
+  SpinClass.create(studio_id: 2, instructor_id: maya.id, location_id: 17, time: "60 MINUTE POWER HOUR", start: "201907280830EST", end: "201907280930EST")
+
+  SpinClass.create(studio_id: 2, instructor_id: maya.id, location_id: 17, time: "60 MINUTE POWER HOUR", start: "201907300830EST", end: "201907300930EST")
+
+  SpinClass.create(studio_id: 2, instructor_id: maya.id, location_id: 17, time: "60 MINUTE POWER HOUR", start: "201908010830EST", end: "201908010930EST")
+
+  SpinClass.create(studio_id: 2, instructor_id: eddie.id, location_id: 16, time: "45 MINUTE POWER RIDE", start: "201907290630EST", end: "201907290715EST")
+
+  SpinClass.create(studio_id: 2, instructor_id: eddie.id, location_id: 16, time: "45 MINUTE POWER RIDE", start: "201907310630EST", end: "201907310715EST")
+
+  SpinClass.create(studio_id: 2, instructor_id: eddie.id, location_id: 16, time: "45 MINUTE POWER RIDE", start: "201908020630EST", end: "201908020715EST")
+
+  SpinClass.create(studio_id: 2, instructor_id: laurie.id, location_id: 18, time: "60 MINUTE POWER HOUR", start: "201907281430EST", end: "201907281530EST")
+
+  SpinClass.create(studio_id: 2, instructor_id: laurie.id, location_id: 18, time: "60 MINUTE POWER HOUR", start: "201907301830EST", end: "201907301930EST")
+
+  SpinClass.create(studio_id: 2, instructor_id: josh.id, location_id: 19, time: "KANYE THEME RIDE", start: "201908031430EST", end: "201908031530EST")
+
+  SpinClass.create(studio_id: 2, instructor_id: claire.id, location_id: 19, time: "45 MINUTE POWER RIDE", start: "201908030930EST", end: "201908031015EST")
+
+  #PELETON CLASSES
+  SpinClass.create(studio_id: 3, instructor_id: alex.id, location_id: 31, time: "60 MINUTE POWER HOUR", start: "201907300530EST", end: "201907300630EST")
+
+  SpinClass.create(studio_id: 3, instructor_id: alex.id, location_id: 31, time: "45 MINUTE POWER HOUR", start: "201907301930EST", end: "201907302015EST")
+
+  SpinClass.create(studio_id: 3, instructor_id: ally.id, location_id: 31, time: "45 MINUTE POWER HOUR", start: "201907281730EST", end: "201907281815EST")
+
+  SpinClass.create(studio_id: 3, instructor_id: ben.id, location_id: 31, time: "CARDI B VS. NICKI MINAJ RIDE", start: "201907311730EST", end: "201907311830EST")
+
+  SpinClass.create(studio_id: 3, instructor_id: cody.id, location_id: 31, time: "THROWBACK THURSDAY RIDE", start: "201907311530EST", end: "201907311630EST")
+
+  SpinClass.create(studio_id: 3, instructor_id: hannah.id, location_id: 31, time: "60 MINUTE POWER RIDE", start: "201908021530EST", end: "201908021630EST")
+
+  SpinClass.create(studio_id: 3, instructor_id: hannah.id, location_id: 31, time: "60 MINUTE POWER RIDE", start: "201908030800EST", end: "201908030900EST")
+
+  #CRANK CLASSES
+  SpinClass.create(studio_id: 4, instructor_id: cedric.id, location_id: 32, time: "60 MINUTE POWER RIDE", start: "201907280600EST", end: "201907280700EST")
+
+  SpinClass.create(studio_id: 4, instructor_id: yesenia.id, location_id: 32, time: "45 MINUTE POWER RIDE", start: "201907291400EST", end: "201907291500EST")
+
+  SpinClass.create(studio_id: 4, instructor_id: jay.id, location_id: 33, time: "45 MINUTE POWER RIDE", start: "201907310530EST", end: "201907310615EST")
+
+  SpinClass.create(studio_id: 4, instructor_id: annette.id, location_id: 33, time: "60 MINUTE POWER RIDE", start: "201908011530EST", end: "201908011630EST")
+
+  #CYC CLASSES
+  SpinClass.create(studio_id: 5, instructor_id: elena.id, location_id: 34, time: "60 MINUTE POWER RIDE", start: "201907291030EST", end: "201907291130EST")
+
+  SpinClass.create(studio_id: 5, instructor_id: ari.id, location_id: 35, time: "45 MINUTE POWER RIDE", start: "201908010630EST", end: "201908010715EST")
+
+  SpinClass.create(studio_id: 5, instructor_id: ari.id, location_id: 35, time: "60 MINUTE POWER SPRINT", start: "201907291900EST", end: "201907292000EST")
+
+  SpinClass.create(studio_id: 5, instructor_id: aaron.id, location_id: 35, time: "45 MINUTE POWER RIDE", start: "201908031200EST", end: "201908031300EST")
+
+  SpinClass.create(studio_id: 5, instructor_id: aaron.id, location_id: 36, time: "45 MINUTE POWER RIDE", start: "201908021000EST", end: "201908021045EST")
+
+  SpinClass.create(studio_id: 5, instructor_id: ari.id, location_id: 36, time: "45 MINUTE POWER RIDE", start: "201908021330EST", end: "201908021415EST")
+
+  SpinClass.create(studio_id: 5, instructor_id: aaron.id, location_id: 36, time: "45 MINUTE POWER RIDE", start: "201907311030EST", end: "201907311145EST")
+
+  #RYDE CLASSES
+  SpinClass.create(studio_id: 6, instructor_id: angela.id, location_id: 38, time: "45 MINUTE POWER RIDE", start: "201907300630EST", end: "201907300715EST")
+
+  SpinClass.create(studio_id: 6, instructor_id: james.id, location_id: 38, time: "POWER HOUR RIDE", start: "201907310930EST", end: "201907311030EST")
+
+  SpinClass.create(studio_id: 6, instructor_id: james.id, location_id: 38, time: "POWER HOUR RIDE", start: "201908021100EST", end: "201908021200EST")
+
+  SpinClass.create(studio_id: 6, instructor_id: danielle.id, location_id: 38, time: "BLAST FROM THE PAST RIDE", start: "201908021700EST", end: "201908021745EST")
+
+  SpinClass.create(studio_id: 6, instructor_id: dallis.id, location_id: 38, time: "45 MINUTE POWER RIDE", start: "201907291500EST", end: "201907291545EST")
+
+  SpinClass.create(studio_id: 6, instructor_id: dallis.id, location_id: 38, time: "45 MINUTE POWER RIDE", start: "201908011300EST", end: "201908011345EST")
+
+  #SWERVE CLASSES
+  SpinClass.create(studio_id: 7, instructor_id: jamey.id, location_id: 39, time: "45 MINUTE POWER RIDE", start: "201907280730EST", end: "201907280815EST")
+
+  SpinClass.create(studio_id: 7, instructor_id: simon.id, location_id: 40, time: "NO SUNDAY SCARIES RIDE", start: "201907281330EST", end: "201907281430EST")
+
+  SpinClass.create(studio_id: 7, instructor_id: coleman.id, location_id: 40, time: "POWER HOUR RIDE", start: "201907301330EST", end: "201907301430EST")
+
+  SpinClass.create(studio_id: 7, instructor_id: jenna.id, location_id: 39, time: "POWER HOUR RIDE", start: "201907311330EST", end: "201907311430EST")
+
+  SpinClass.create(studio_id: 7, instructor_id: dyan.id, location_id: 40, time: "RISE AND GRIND RIDE", start: "201908010530EST", end: "201908010615EST")
+
+  SpinClass.create(studio_id: 7, instructor_id: simon.id, location_id: 41, time: "RISE AND GRIND RIDE", start: "2019080300530EST", end: "201908030615EST")
+
+  SpinClass.create(studio_id: 7, instructor_id: coleman.id, location_id: 41, time: "FRIDAY NIGHT RIDE", start: "201908021830EST", end: "201908021915EST")
+
+
+  #SYNC CLASSES
+  SpinClass.create(studio_id: 8, instructor_id: karim.id, location_id: 42, time: "45 MINUTE POWER RIDE", start: "201907280930EST", end: "201907281015EST")
+
+  SpinClass.create(studio_id: 8, instructor_id: karla.id, location_id: 42, time: "ARIANA GRANDE THEME RIDE", start: "201907291630EST", end: "201907291715EST")
+
+  SpinClass.create(studio_id: 8, instructor_id: javi.id, location_id: 42, time: "#HILLS_FOR_DAYS RIDE", start: "201907300930EST", end: "201907301015EST")
+
+  SpinClass.create(studio_id: 8, instructor_id: ashley.id, location_id: 42, time: "POWER HOUR RIDE", start: "201907311830EST", end: "201907311930EST")
+
+  SpinClass.create(studio_id: 8, instructor_id: ashley.id, location_id: 42, time: "POWER HOUR RIDE", start: "201908011830EST", end: "201908011930EST")
+
+  SpinClass.create(studio_id: 8, instructor_id: javi.id, location_id: 42, time: "#HILLS_FOR_DAYS RIDE", start: "201908020530EST", end: "201908020615EST")
+
+  #AQUA CLASSES
+  SpinClass.create(studio_id: 9, instructor_id: tzipora.id, location_id: 43, time: "AQUA RIDE 45", start: "201907281230EST", end: "201907281315EST")
+
+  SpinClass.create(studio_id: 9, instructor_id: ed.id, location_id: 43, time: "AQUA RIDE 60", start: "201907281830EST", end: "201907281915EST")
+
+  SpinClass.create(studio_id: 9, instructor_id: jc.id, location_id: 43, time: "AQUA RIDE 45", start: "201907290530EST", end: "201907290615EST")
+
+  SpinClass.create(studio_id: 9, instructor_id: moses.id, location_id: 43, time: "AQUA RIDE 45", start: "201907301630EST", end: "201907301715EST")
+
+  SpinClass.create(studio_id: 9, instructor_id: kalli.id, location_id: 43, time: "AQUA RIDE 45", start: "201908010930EST", end: "201908011015EST")
+
+  SpinClass.create(studio_id: 9, instructor_id: tzipora.id, location_id: 43, time: "AQUA RIDE 60", start: "201908011345EST", end: "201908011445EST")
+
+  SpinClass.create(studio_id: 9, instructor_id: ed.id, location_id: 43, time: "AQUA RIDE 60", start: "201908031330EST", end: "201908031430EST")
 
 
 puts "end"
